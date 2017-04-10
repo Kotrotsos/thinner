@@ -2,7 +2,9 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-babel');
+
 
     grunt.initConfig({
         sass: {
@@ -39,6 +41,13 @@ module.exports = function(grunt) {
                     'build/main.js': 'src/js/*.js'
                 }
             }
+        },
+        copy: {
+            main: {
+                expand: true,
+                src: 'src/*.html',
+                dest: 'build/',
+            },
         }
     });
 
