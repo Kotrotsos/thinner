@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/Kotrotsos/thinner#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2"
   }
