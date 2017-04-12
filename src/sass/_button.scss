@@ -1,0 +1,75 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: $color-primary;
+    border: 0.1rem solid $color-primary;
+    border-radius: 20px;
+    color: $color-initial;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.8rem;
+    padding: 0 3.0rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 200ms;
+
+    &:focus,
+    &:hover {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-initial;
+        outline: 0;
+    }
+    &.button-secondary {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        &:focus,
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: $color-initial;
+            outline: 0;
+        }
+    }
+
+    &.button-outline {
+        background-color: transparent;
+        border-color: 0;
+        color: $color-primary;
+
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border-color: 0;
+            color: $color-secondary;
+            outline: 0;
+        }
+    }
+
+    &.button-link {
+        background-color: transparent;
+        border-color: transparent;
+        color: $black;
+        text-decoration: underline;
+
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border-color: 0;
+            color: $black;
+            outline: 0;
+            text-decoration: none;
+        }
+    }
+}
