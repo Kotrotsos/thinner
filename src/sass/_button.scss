@@ -6,53 +6,38 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-    background-color: $color-primary;
-    border: 0.1rem solid $color-primary;
-    border-radius: 20px;
-    color: $color-initial;
-    cursor: pointer;
+    background-color: $bondi-blue;
+    color: $white;
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 700;
-    height: 3.8rem;
-    letter-spacing: 0.1rem;
-    line-height: 3.8rem;
-    padding: 0 3.0rem;
+    margin-bottom: 0;
+    font-weight: 600;
     text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
     white-space: nowrap;
+    height: 6rem;
+    padding: 1rem 3rem;
+    line-height: 2.2;
     transition: all 200ms;
-
     &:focus,
     &:hover {
-        background-color: $color-secondary;
-        border-color: $color-secondary;
-        color: $color-initial;
+        background-color: $bondi-blue-hover;
+        color: $white;
         outline: 0;
     }
+
     &.button-secondary {
-        background-color: $color-secondary;
-        border-color: $color-secondary;
+        background-color: $white;
+        border-color: $bondi-blue;
+        color: $bondi-blue;
         &:focus,
         &:hover {
-            background-color: $color-primary;
-            border-color: $color-primary;
-            color: $color-initial;
-            outline: 0;
-        }
-    }
-
-    &.button-outline {
-        background-color: transparent;
-        border-color: 0;
-        color: $color-primary;
-
-        &:focus,
-        &:hover {
-            background-color: transparent;
-            border-color: 0;
-            color: $color-secondary;
+            background-color: $pale;
+            border-color: $bondi-blue;
+            color: $bondi-blue;
             outline: 0;
         }
     }
@@ -60,9 +45,22 @@ input[type='submit'] {
     &.button-link {
         background-color: transparent;
         border-color: transparent;
-        color: $black;
-        text-decoration: underline;
+        color: $bondi-blue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5rem;
 
+	    &:after {
+            margin-left: 10px;
+            content: "";
+            text-decoration: underline;
+            display: inline-block;
+            	background: url("svg/sprite.css-b0961c7e.svg") 99.25311203319502% 67.40088105726872% no-repeat;
+            position: relative;
+            top: 3px;
+            width: 16px;
+            height: 15px;
+        }
         &:focus,
         &:hover {
             background-color: transparent;

@@ -3,8 +3,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-babel');
+    grunt.loadNpmTasks('grunt-svg-sprite');
 
+    var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
 
     grunt.initConfig({
         sass: {
@@ -14,23 +17,46 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/main.css': 'src/sass/base.scss'
+                    'build/css/main.css': 'src/sass/base.scss'
                 }
             }
         },
+        svg_sprite: {
+            basic: {
+                expand: true,
+                cwd: 'src/images',
+                src: ['**/*.svg'],
+                dest: 'build',
+                options: {
+                    mode: {
+                        css: {
+                            render: {
+                                css: true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
         watch: {
             all: {
-                files: ['src/**/*.*'],
-                tasks: ['sass', 'babel'],
                 options: {
-                    spawn: true,
-                    livereload: {
-                        host: 'localhost',
-                        port: 9000
-                    }
+                    livereload: true
                 },
+
+                files: ['src/**/*.*', 'index.html'],
+                tasks: tasks
             },
         },
+
+        concat: {
+            js: {
+                src: ['src/js/*.js'],
+                dest: 'src/temp/temp.js'
+            }
+        },
+
         babel: {
             options: {
                 sourceMap: true,
@@ -38,10 +64,11 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/main.js': 'src/js/*.js'
+                    'build/main.js': 'src/temp/temp.js'
                 }
             }
         },
+
         copy: {
             main: {
                 expand: true,
@@ -49,7 +76,8 @@ module.exports = function(grunt) {
                 dest: 'build/',
             },
         }
+
     });
 
-    grunt.registerTask('default', ['sass', 'babel']);
+    grunt.registerTask('default', tasks);
 }

@@ -1,7 +1,12 @@
 @import "normal";
 
-@import "settings";
-@import "layout";
-@import "sgrid";
+@import "mixins/breakpoints";
 
+/* Primary */
+@import "fonts";
+@import "variables";
+@import "layout";
+@import "flexgrid";
+
+/* Components */
 @import "button";

@@ -1,0 +1,36 @@
+
+.row {
+   -js-display: flex;
+   display: flex;
+   flex-direction: column;
+}
+
+.column {
+  flex: 1;
+}
+
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
+.order-5 { order: 5; }
+
+.grow-1 { flex-grow: 1; }
+.grow-2 { flex-grow: 2; }
+.grow-3 { flex-grow: 3; }
+.grow-4 { flex-grow: 4; }
+
+// Container based modifiers
+.reverse-order {
+    flex-direction: row-reverse;
+}
+.align-centers {
+    align-items: center;
+}
+
+@include breakpoint(sm) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}

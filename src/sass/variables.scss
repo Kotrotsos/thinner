@@ -8,11 +8,14 @@ $bp-small: 640px;
 // Color
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// NEW NAMED COLOURS
 $cardinal    : #D40D47;
 $berry       : #555390;
 $bondi-blue  : #2AABCE;
 $carmin      : #89143A;
 $amber       : #FABB2E;
+
+$bondi-blue-hover : #1C95B6;
 
 $white       : #FFFFFF;
 $pale        : #F3F6F6;
@@ -25,6 +28,7 @@ $promo-gray  : #EBEDED;
 
 $black       : #000000;
 
-$color-initial: #fff ;
-$color-primary: $cardinal;
-$color-secondary: $bondi-blue ;
+
+$error-red       : #D0021B;
+$warning-orange  : #FF9100;
+$validation-green: #6FB616;

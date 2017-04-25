@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Star_Empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Star-Icon-Extra-Small">
+            <g id="Icon_Star_Empty">
+                <circle id="Oval-4" fill="#FABB2E" cx="8" cy="8" r="8"></circle>
+                <path d="M8.00000075,10.0587254 L5.66796731,11.760847 C5.22124768,12.086902 4.99787841,11.9272912 5.17063896,11.3995168 L6.06881485,8.65563674 L3.72936303,6.96372566 C3.28122235,6.63962657 3.36399634,6.37786732 3.91932556,6.37908111 L6.80646223,6.38539157 L7.69263492,3.63761139 C7.86238838,3.11125215 8.13691479,3.10908684 8.30736657,3.63761139 L9.19353927,6.38539157 L12.0806759,6.37908111 C12.63373,6.37787229 12.7206227,6.63829331 12.2706385,6.96372566 L9.93118664,8.65563674 L10.8293625,11.3995168 C11.0014153,11.925129 10.7805915,12.0882433 10.3320342,11.760847 L8.00000075,10.0587254 Z" id="Star" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -15,7 +15,7 @@ html {
 
 // Default body styles
 body {
-	color: $color-secondary;;
+	color: $dark-gray;
 	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	font-size: 1.6em;// Currently ems cause chrome bug misinterpreting rems on body element
 	font-weight: 300;
@@ -24,21 +24,8 @@ body {
 }
 
 .container {
+    font-size: 1.8rem;
     margin: auto;
     width: $containerwidth;
     margin-top: $base-whitespace;
-}
-
-.main-card {
-    width: 800px;
-    height: 800px;
-    background-color: red;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
 }
