@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="build/css/main.css">
     <style>
         .column {
-            background-color: lightgray;
-            outline: solid white 1px;
+            border: solid #2AABCE 1px;
+            border-radius: 5px;
+            margin-bottom: 5px;
         }
     </style>
 
@@ -18,31 +20,51 @@
 <body>
 
     <div class="container">
+      <h3>grid</h3>
+      <p>Grid based on Flexbox</p>
         <div class="row">
-            <div class="column">1</div>
-            <div class="column">2</div>
-            <div class="column">3</div>
-            <div class="column">4</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
         </div>
         <div class="row">
-            <div class="column">half<br><br>sdfds</div>
-            <div class="column">half<br>half</div>
+            <div class="column">column<br><br>Some low text</div>
+            <div class="column"> column<br> </div>
+        </div>
+
+        <div class="row">
+            <div class="column grow-2">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
         </div>
 
         <div class="row">
-            <div class="column grow-2">grow-1</div>
-            <div class="column">2</div>
-            <div class="column span-2">2</div>
+            <div class="column">column</div>
+            <div class="column grow-2">column grow-2</div>
+            <div class="column">column</div>
+        </div>
+
+        <h3>CTA Buttons</h3>
+        <div class="section">
+
+                <div class="cta-button">Primary button</div>
+                <div class="cta-button cta-button-secondary">Secondary button</div>
+                <div class="cta-button cta-button-link">Secondary link</div>
+
+                <button class="cta-button" disabled>Primary button</button>
+                <button class="cta-button cta-button-secondary" disabled>Secondary button</button>
 
         </div>
 
-        <h1>Buttons</h1>
-        <div class="row">
-            <div class="col">
-                <div class="button">Primary button</div>
-                <div class="button button-secondary">Secondary button</div>
-                <div class="button button-link">Secondary link</div>
-            </div>
+        <div class="section">
+            <a href="#" class="link">This is a link</a>
+        </div>
+
+        <div class="section">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
         </div>
     </div>
     <script src="build/main.js"></script>

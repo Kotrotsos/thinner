@@ -5,11 +5,33 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-babel');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-svg-sprite');
+    grunt.loadNpmTasks('grunt-sass-lint');
 
     var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
+    var dev = ['svg_sprite', 'sasslint', 'sass', 'concat', 'babel', 'connect', 'watch'];
 
     grunt.initConfig({
+        sasslint: {
+            options: {
+                configFile: '.sass-lint.yml',
+            },
+            target: ['src/sass/**/*.scss']
+        },
+        connect: {
+            dev: {
+                options: {
+                    port: 8008,
+                    hostname: 'localhost',
+                    base: '',
+                    open: {
+                        target: 'http://<%= connect.dev.options.hostname %>:' +
+                            '<%= connect.dev.options.port %>'
+                    }
+                }
+            },
+        },
         sass: {
             options: {
                 style: 'compact',
@@ -46,7 +68,7 @@ module.exports = function(grunt) {
                 },
 
                 files: ['src/**/*.*', 'index.html'],
-                tasks: tasks
+                tasks: dev
             },
         },
 
@@ -64,7 +86,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/main.js': 'src/temp/temp.js'
+                    'build/js/main.js': 'src/temp/temp.js'
                 }
             }
         },
@@ -80,4 +102,5 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('default', tasks);
+    grunt.registerTask('dev', dev);
 }

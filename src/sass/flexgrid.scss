@@ -1,8 +1,8 @@
 
 .row {
-   -js-display: flex;
-   display: flex;
-   flex-direction: column;
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .column {
@@ -22,10 +22,10 @@
 
 // Container based modifiers
 .reverse-order {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .align-centers {
-    align-items: center;
+  align-items: center;
 }
 
 @include breakpoint(sm) {

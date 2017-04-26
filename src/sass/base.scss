@@ -1,12 +1,14 @@
-@import "normal";
+@import 'normal';
 
-@import "mixins/breakpoints";
+@import 'mixins/breakpoints';
 
 /* Primary */
-@import "fonts";
-@import "variables";
-@import "layout";
-@import "flexgrid";
+@import 'fonts';
+@import 'variables';
+@import 'layout';
+@import 'flexgrid';
+@import 'typography';
 
 /* Components */
-@import "button";
+@import 'button';
+@import 'link';

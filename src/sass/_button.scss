@@ -1,73 +1,86 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.button,
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-    background-color: $bondi-blue;
-    color: $white;
+.cta-button {
+  background-color: $bondi-blue;
+  color: $white;
+  margin-bottom: $base-whitespace;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  height: 6rem;
+  padding: 1rem 3rem;
+  line-height: 2.1;
+  border-radius: 3rem;
+  transition: all $transitionspeed;
+
+  @include breakpoint(sm) {
     display: inline-block;
-    margin-bottom: 0;
-    font-weight: 600;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid transparent;
-    white-space: nowrap;
-    height: 6rem;
-    padding: 1rem 3rem;
-    line-height: 2.2;
-    transition: all 200ms;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $bondi-blue-hover;
+    color: $white;
+    outline: 0;
+  }
+
+  &.cta-button-secondary {
+    background-color: $white;
+    border-color: $bondi-blue;
+    color: $bondi-blue;
+
     &:focus,
     &:hover {
-        background-color: $bondi-blue-hover;
-        color: $white;
-        outline: 0;
+      background-color: $pale;
+      border-color: $bondi-blue;
+      color: $bondi-blue;
+      outline: 0;
+    }
+  }
+
+  &.cta-button-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: $bondi-blue;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:after {
+      display: inline-block;
+      margin-left: 10px;
+      content: "";
+      text-decoration: underline;
+      background: url("svg/sprite.css-b0961c7e.svg") 99.25311203319502% 67.40088105726872% no-repeat;
+      position: relative;
+      top: 1px;
+      width: 16px;
+      height: 15px;
     }
 
-    &.button-secondary {
-        background-color: $white;
-        border-color: $bondi-blue;
-        color: $bondi-blue;
-        &:focus,
-        &:hover {
-            background-color: $pale;
-            border-color: $bondi-blue;
-            color: $bondi-blue;
-            outline: 0;
-        }
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: 0;
+      color: $dark-gray;
+      outline: 0;
+      text-decoration: none;
     }
+  }
 
-    &.button-link {
-        background-color: transparent;
-        border-color: transparent;
-        color: $bondi-blue;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.5rem;
-
-	    &:after {
-            margin-left: 10px;
-            content: "";
-            text-decoration: underline;
-            display: inline-block;
-            	background: url("svg/sprite.css-b0961c7e.svg") 99.25311203319502% 67.40088105726872% no-repeat;
-            position: relative;
-            top: 3px;
-            width: 16px;
-            height: 15px;
-        }
-        &:focus,
-        &:hover {
-            background-color: transparent;
-            border-color: 0;
-            color: $black;
-            outline: 0;
-            text-decoration: none;
-        }
+  &[disabled], &.disabled {
+    background-color: $pale;
+    border: transparent;
+    color: $light-gray;
+    cursor: default;
+    &:focus,
+    &:hover {
+      color: $light-gray;
     }
+  }
 }

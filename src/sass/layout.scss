@@ -6,26 +6,36 @@
   box-sizing: border-box;
 }
 
-// The base font-size is set at 62.5% for having the convenience
-// of sizing rems in a way that is similar to using px: 1.6rem = 16px
 html {
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {     -webkit-font-smoothing: subpixel-antialiased; }
 
 // Default body styles
 body {
-	color: $dark-gray;
-	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-	font-size: 1.6em;// Currently ems cause chrome bug misinterpreting rems on body element
-	font-weight: 300;
-	letter-spacing: .01em;
-	line-height: 1.6;
+  color: $dark-gray;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5rem;// Currently ems cause chrome bug misinterpreting rems on body element
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+
+  @include breakpoint(md) {
+    font-size: 1.6rem;
+  }
 }
 
 .container {
-    font-size: 1.8rem;
-    margin: auto;
-    width: $containerwidth;
-    margin-top: $base-whitespace;
+  margin: auto;
+  font-size: 1.8rem;
+  margin-top: $base-whitespace;
+  width: 100%;
+  padding: $base-whitespace;
+  
+  @include breakpoint(sm) {
+    width: 80%;
+  }
 }
