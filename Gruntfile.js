@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             options: {
                 configFile: '.sass-lint.yml',
             },
-            target: ['src/sass/**/*.scss']
+            target: ['src/components/**/*.scss']
         },
         connect: {
             dev: {
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/css/main.css': 'src/sass/base.scss'
+                    'build/css/main.css': 'src/components/base.scss'
                 }
             }
         },
