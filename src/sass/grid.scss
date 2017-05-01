@@ -1,4 +1,6 @@
 
+
+
 .row {
   -js-display: flex;
   display: flex;
@@ -29,8 +31,19 @@
 }
 
 @include breakpoint(sm) {
+  .row.paired {
+    flex-direction: row;
+  }
+  .row.paired > .column {
+    width: 50%;
+  }
+}
+
+@include breakpoint(md) {
   .row {
+    -js-display: flex;
     display: flex;
     flex-direction: row;
+
   }
 }

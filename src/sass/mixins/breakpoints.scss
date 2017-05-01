@@ -11,17 +11,22 @@
       }
     }
 */
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
 @mixin breakpoint($class) {
   @if $class == xs {
-    @media (max-width: 767px) { @content; }
+    @media (max-width: $sm - 1) { @content; }
   }
   @else if $class == sm {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: $sm) { @content; }
   }
   @else if $class == md {
-    @media (min-width: 992px) { @content; }
+    @media (min-width: $md) { @content; }
   }
   @else if $class == lg {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: $lg) { @content; }
   }
 }

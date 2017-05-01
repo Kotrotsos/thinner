@@ -33,9 +33,10 @@ body {
   font-size: 1.8rem;
   margin-top: $base-whitespace;
   width: 100%;
-  padding: $base-whitespace;
-  
-  @include breakpoint(sm) {
-    width: 80%;
+  padding: $base-whitespace * 1.5;
+
+  @include breakpoint(md) {
+    width: $md;
+    padding: $base-whitespace * 1.5;
   }
 }

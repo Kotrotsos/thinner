@@ -54,51 +54,55 @@ body { color: #2D353A; font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 
   body { font-size: 1.6rem; } }
 
 /* line 31, ../../src/sass/layout.scss */
-.container { margin: auto; font-size: 1.8rem; margin-top: 10px; width: 100%; padding: 10px; }
-@media (min-width: 768px) { /* line 31, ../../src/sass/layout.scss */
-  .container { width: 80%; } }
+.container { margin: auto; font-size: 1.8rem; margin-top: 10px; width: 100%; padding: 15px; }
+@media (min-width: 992px) { /* line 31, ../../src/sass/layout.scss */
+  .container { width: 992px; padding: 15px; } }
 
-/* line 2, ../../src/sass/flexgrid.scss */
+/* line 4, ../../src/sass/grid.scss */
 .row { -js-display: flex; display: flex; flex-direction: column; }
 
-/* line 8, ../../src/sass/flexgrid.scss */
+/* line 10, ../../src/sass/grid.scss */
 .column { flex: 1; }
 
-/* line 12, ../../src/sass/flexgrid.scss */
+/* line 14, ../../src/sass/grid.scss */
 .order-1 { order: 1; }
 
-/* line 13, ../../src/sass/flexgrid.scss */
+/* line 15, ../../src/sass/grid.scss */
 .order-2 { order: 2; }
 
-/* line 14, ../../src/sass/flexgrid.scss */
+/* line 16, ../../src/sass/grid.scss */
 .order-3 { order: 3; }
 
-/* line 15, ../../src/sass/flexgrid.scss */
+/* line 17, ../../src/sass/grid.scss */
 .order-4 { order: 4; }
 
-/* line 16, ../../src/sass/flexgrid.scss */
+/* line 18, ../../src/sass/grid.scss */
 .order-5 { order: 5; }
 
-/* line 18, ../../src/sass/flexgrid.scss */
+/* line 20, ../../src/sass/grid.scss */
 .grow-1 { flex-grow: 1; }
 
-/* line 19, ../../src/sass/flexgrid.scss */
+/* line 21, ../../src/sass/grid.scss */
 .grow-2 { flex-grow: 2; }
 
-/* line 20, ../../src/sass/flexgrid.scss */
+/* line 22, ../../src/sass/grid.scss */
 .grow-3 { flex-grow: 3; }
 
-/* line 21, ../../src/sass/flexgrid.scss */
+/* line 23, ../../src/sass/grid.scss */
 .grow-4 { flex-grow: 4; }
 
-/* line 24, ../../src/sass/flexgrid.scss */
+/* line 26, ../../src/sass/grid.scss */
 .reverse-order { flex-direction: row-reverse; }
 
-/* line 27, ../../src/sass/flexgrid.scss */
+/* line 29, ../../src/sass/grid.scss */
 .align-centers { align-items: center; }
 
-@media (min-width: 768px) { /* line 32, ../../src/sass/flexgrid.scss */
-  .row { display: flex; flex-direction: row; } }
+@media (min-width: 768px) { /* line 34, ../../src/sass/grid.scss */
+  .row.paired { flex-direction: row; }
+  /* line 37, ../../src/sass/grid.scss */
+  .row.paired > .column { width: 50%; } }
+@media (min-width: 992px) { /* line 43, ../../src/sass/grid.scss */
+  .row { -js-display: flex; display: flex; flex-direction: row; } }
 /* line 4, ../../src/sass/typography.scss */
 h1, h2, h3 { display: block; font-family: "Lato"; font-weight: 700; }
 
