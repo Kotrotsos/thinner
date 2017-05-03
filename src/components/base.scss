@@ -1,15 +1,22 @@
 @import 'shared/normal';
-
 @import 'shared/mixins/breakpoints';
 
 /* Primary */
-
 @import 'shared/variables';
 @import 'shared/layout';
 @import 'shared/typography';
+@import 'shared/utilities';
 
-/* Components */
 @import 'fonts/fonts';
 @import 'grid/grid';
-@import 'button/button';
-@import 'link/link';
+
+/* Atoms */
+@import 'shared/button';
+@import 'shared/link';
+@import 'shared/image';
+@import 'shared/logo';
+@import 'shared/component';
+/* Molecules AKA components */
+
+@import 'card/card';
+@import 'navigation/navigation';

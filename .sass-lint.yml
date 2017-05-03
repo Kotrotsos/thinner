@@ -30,16 +30,10 @@ rules:
     - 2
     -
       size: 2
-  property-sort-order:
-    - 1
-    -
-      order:
-        - display
-      ignore-custom-properties: true
   variable-for-property:
     - 2
     -
       properties:
         - color
         - background-color
-        - margin-bottom
+        

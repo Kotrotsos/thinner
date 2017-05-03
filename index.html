@@ -7,74 +7,105 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="build/css/main.css">
     <style>
-        .column {
-            border: solid #2AABCE 1px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
+      .column {
+        border: solid red 1px;
+        margin-bottom: 10px;
+      }
+      .c-component {
+
+      }
     </style>
 
     <title>my</title>
 </head>
 
-<body>
+<body class="pale">
 
-    <div class="container">
-      <h3>grid</h3>
-      <p>Grid based on Flexbox</p>
-        <div class="row">
-            <div class="column">column</div>
-            <div class="column">column</div>
-            <div class="column">column</div>
-            <div class="column">column</div>
-            <div class="column">column</div>
-            <div class="column">column</div>
+    <div class="c-navigation c-navigation-isolated">
+        <img class="o-logo" src="build/images/MoneYou_Logo_Horizontal.svg">
+    </div>
+
+    <div class="o-container">
+        <div class="c-component c-component-background">
+            <h3>grid, full width</h3>
+            <p>Grid based on Flexbox</p>
+            <div class="row">
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+            </div>
+
+            <div class="row">
+                <div class="column">column<br><br>Some low text</div>
+                <div class="column"> column<br> </div>
+            </div>
+
+            <div class="row">
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+            </div>
+
+            <div class="row">
+                <div class="column">column</div>
+                <div class="column grow-2">column grow-2</div>
+                <div class="column">column</div>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="column">column<br><br>Some low text</div>
-            <div class="column"> column<br> </div>
-        </div>
 
-        <div class="row">
-            <div class="column grow-2">column</div>
-            <div class="column">column</div>
-            <div class="column">column</div>
-        </div>
 
-        <div class="row">
-            <div class="column">column</div>
-            <div class="column grow-2">column grow-2</div>
-            <div class="column">column</div>
-        </div>
 
-        <h3>Doubled up</h3>
+        <div class="c-component">
+            <h3>Doubled up</h3>
 
-        <div class="row paired">
-          <div class="column">pair</div>
-          <div class="column">pair</div>
-        </div>
-
-        <h3>CTA Buttons</h3>
-        <div class="section">
-                <div class="cta-button">Primary button</div>
-                <div class="cta-button cta-button-secondary">Secondary button</div>
-                <div class="cta-button cta-button-link">Secondary link</div>
-
-                <button class="cta-button" disabled>Primary button</button>
-                <button class="cta-button cta-button-secondary" disabled>Secondary button</button>
+            <div class="row paired">
+                <div class="column">pair</div>
+                <div class="column">pair</div>
+            </div>
 
         </div>
 
-        <div class="section">
-            <a href="#" class="link">This is a link</a>
+
+        <div class="c-component">
+            <h3>CTA Buttons</h3>
+            <div class="section">
+                <div class="cta-button" role="button">Primary button</div>
+                <div class="cta-button cta-button-secondary" role="button">Secondary button</div>
+                <div class="cta-button cta-button-link" role="button">Secondary link</div>
+
+                <button class="cta-button" disabled role="button">Primary button</button>
+                <button class="cta-button cta-button-secondary" disabled role="button">Secondary button</button>
+
+            </div>
+
+            <div class="section">
+                <a href="#" class="link">This is a link</a>
+            </div>
         </div>
 
-        <div class="section">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
+        <div class="c-component">
+            <div class="section">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+            </div>
+
         </div>
+        <div class="c-component c-component-full">
+            <h3>cards</h3>
+            <div class="card-deck">
+                <div class="card card--shadow">hello</div>
+                <div class="card card--shadow">hello</div>
+                <div class="card card--shadow">hello</div>
+            </div>
+
+        </div>
+
+
     </div>
     <script src="build/main.js"></script>
 </body>

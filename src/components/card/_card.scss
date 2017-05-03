@@ -1,5 +1,43 @@
 
 
-.card {
+.card-deck {
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
 
+}
+.card {
+  flex: 1;
+  border: solid $light-gray 1px;
+  border-radius: 5px;
+  position: relative;
+
+  &.card--shadow {
+    box-shadow: 0 2px 4px 1px rgba(104,117,123,0.15);
+  }
+  .card-image {
+
+  }
+  .card-image--full {
+
+  }
+  .card-block {
+
+  }
+  .card-title {
+
+  }
+  .card-text {
+
+  }
+
+  @include breakpoint(sm) {
+    margin: 0 $base-whitespace * 1.5 0 0;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
 }

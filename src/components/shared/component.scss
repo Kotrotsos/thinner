@@ -1,0 +1,14 @@
+.c-component {
+  margin: $base-whitespace * 1.5;
+  border-radius: $base-borderradius;
+  padding: $base-whitespace $base-whitespace * 2;
+}
+.c-component-full {
+  margin: 0;
+}
+.c-component-framed {
+  border: solid $light-gray 1px;
+}
+.c-component-background {
+  background-color: $white;
+}

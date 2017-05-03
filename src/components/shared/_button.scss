@@ -2,10 +2,12 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .cta-button {
+  width: 100%;
   background-color: $bondi-blue;
   color: $white;
   margin-bottom: $base-whitespace;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.8rem;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -21,6 +23,8 @@
 
   @include breakpoint(sm) {
     display: inline-block;
+    width: initial;
+    margin-bottom: initial;
   }
 
   &:focus,
@@ -56,10 +60,10 @@
       margin-left: 10px;
       content: "";
       text-decoration: underline;
-      background: url("svg/sprite.css-b0961c7e.svg") 99.25311203319502% 67.40088105726872% no-repeat;
+      background: url("svg/sprite.css-7a34b6b4.svg") 86.66666666666667% 68.50507982583454% no-repeat;
       position: relative;
       top: 1px;
-      width: 16px;
+      width: 15px;
       height: 15px;
     }
 

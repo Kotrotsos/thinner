@@ -8,17 +8,29 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-svg-sprite');
     grunt.loadNpmTasks('grunt-sass-lint');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+
 
     var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
-    var dev = ['svg_sprite', 'sasslint', 'sass', 'concat', 'babel', 'connect', 'watch'];
+    var dev = ['clean', 'svg_sprite', 'sasslint', 'sass', 'concat', 'babel', 'copy', 'connect', 'watch'];
 
     grunt.initConfig({
+
+        /*
+         * SASSLINT:
+         * Checks the Sass files for style and coding errors
+        */
         sasslint: {
             options: {
                 configFile: '.sass-lint.yml',
             },
             target: ['src/components/**/*.scss']
         },
+
+        /*
+         * Connect:
+         * Runs the dev server on 8008.
+        */
         connect: {
             dev: {
                 options: {
@@ -32,6 +44,11 @@ module.exports = function(grunt) {
                 }
             },
         },
+        
+        /*
+         * SASS:
+         * Compile SASS files to CSS
+        */
         sass: {
             options: {
                 style: 'compact',
@@ -43,11 +60,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        /*
+         * SVG_Sprite:
+         * Creates a single svg sprite file from the images folder (just the svg)
+        */
         svg_sprite: {
             basic: {
                 expand: true,
                 cwd: 'src/images',
-                src: ['**/*.svg'],
+                src: ['*.svg'],
                 dest: 'build',
                 options: {
                     mode: {
@@ -61,6 +83,10 @@ module.exports = function(grunt) {
             }
         },
 
+        /*
+         * WATCH:
+         * Watch for changes
+        */
         watch: {
             all: {
                 options: {
@@ -72,6 +98,10 @@ module.exports = function(grunt) {
             },
         },
 
+        /*
+         * CONCAT:
+         * Merges all JS files into one
+        */
         concat: {
             js: {
                 src: ['src/js/*.js'],
@@ -79,6 +109,10 @@ module.exports = function(grunt) {
             }
         },
 
+        /*
+         * Babel:
+         * Runs ES2015 code through babel and transpiles it into 'old' JS
+        */
         babel: {
             options: {
                 sourceMap: true,
@@ -91,16 +125,35 @@ module.exports = function(grunt) {
             }
         },
 
+        /*
+         * CLEAN:
+         * Cleans the build folder
+        */
+        clean: ['build'],
+
+        /*
+         * COPY:
+         * Copy all assets to the build folder
+        */
         copy: {
-            main: {
+          main: {
+            files: [
+              {
                 expand: true,
                 src: 'src/*.html',
-                dest: 'build/',
-            },
+                dest: 'build'
+              },
+              {
+                expand: true,
+                cwd: 'src/images',
+                src: '*.*',
+                dest: 'build/images/'
+              }
+            ]
+          }
         }
-
     });
 
-    grunt.registerTask('default', tasks);
+    grunt.registerTask('default', dev);
     grunt.registerTask('dev', dev);
 }

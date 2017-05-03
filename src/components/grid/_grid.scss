@@ -10,6 +10,9 @@
 .column {
   flex: 1;
 }
+.column-expand {
+  flex: 1 1 auto;
+}
 
 .order-1 { order: 1; }
 .order-2 { order: 2; }
@@ -30,12 +33,19 @@
   align-items: center;
 }
 
+
+
+
 @include breakpoint(sm) {
   .row.paired {
     flex-direction: row;
   }
   .row.paired > .column {
     width: 50%;
+    margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
 
@@ -44,6 +54,12 @@
     -js-display: flex;
     display: flex;
     flex-direction: row;
+  }
+  div[class^="col"] {
+    margin-right: $base-grid-gutter;
 
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }

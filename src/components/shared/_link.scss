@@ -1,4 +1,4 @@
-.link {
+a, .o-link {
   color: $bondi-blue;
   text-decoration: underline;
   font-weight: 500;
@@ -12,7 +12,7 @@
   }
 
   &:visited {
-    color: initial;
-    text-decoration: initial;
+    color: $bondi-blue;
+    text-decoration: underline;
   }
 }
