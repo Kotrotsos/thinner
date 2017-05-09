@@ -2,18 +2,25 @@
   &-price-box {
     display:flex;
     border: solid $light-gray 1px;
-    padding: $base-whitespace * 2;
+    padding: $base-whitespace;
     border-radius: $base-borderradius;
+    align-items: center;
+    justify-content: center;
     &-logo {
-      width: 60px;
-    }
 
+      width: 53px;
+    }
     &-description {
       flex: 1;
-      margin-right: $base-grid-gutter;
+      font-size: 1.3rem;
+      margin-right: $base-whitespace;
+    }
+    &-up {
+      font-size: 1.3rem;
     }
     &-price {
-      width: 80px
+      font-size: 3rem;
+      width: 65px;
     }
   }
 }
