@@ -1,0 +1,19 @@
+.c-ideal {
+  &-price-box {
+    display:flex;
+    border: solid $light-gray 1px;
+    padding: $base-whitespace * 2;
+    border-radius: $base-borderradius;
+    &-logo {
+      width: 60px;
+    }
+
+    &-description {
+      flex: 1;
+      margin-right: $base-grid-gutter;
+    }
+    &-price {
+      width: 80px
+    }
+  }
+}

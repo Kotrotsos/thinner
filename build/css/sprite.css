@@ -1,297 +1,81 @@
-.svg-Checkmark_checked {
-	background: url("svg/sprite.css-89a36560.svg") 91.58878504672897% 68.40579710144928% no-repeat;
+.svg-iDeal {
+	background: url("svg/sprite.css-40823eef.svg") 97.30941704035874% 25.333333333333332% no-repeat;
 }
 
-.svg-Checkmark_checked-dims {
-	width: 14px;
-	height: 14px;
+.svg-iDeal-dims {
+	width: 44px;
+	height: 38px;
 }
 
-.svg-Icon_Arrow {
-	background: url("svg/sprite.css-89a36560.svg") 98.49187935034803% 64.10998552821997% no-repeat;
+.svg-icon-arrow-left {
+	background: url("svg/sprite.css-40823eef.svg") 91.36842105263158% 35.40372670807454% no-repeat;
 }
 
-.svg-Icon_Arrow-dims {
-	width: 8px;
-	height: 13px;
-}
-
-.svg-Icon_Arrow_Circle {
-	background: url("svg/sprite.css-89a36560.svg") 99.41451990632318% 66.18287373004354% no-repeat;
-}
-
-.svg-Icon_Arrow_Circle-dims {
-	width: 16px;
-	height: 15px;
-}
-
-.svg-Icon_Arrow_Down {
-	background: url("svg/sprite.css-89a36560.svg") 97.54385964912281% 66.27906976744185% no-repeat;
-}
-
-.svg-Icon_Arrow_Down-dims {
+.svg-icon-arrow-left-dims {
 	width: 15px;
 	height: 16px;
 }
 
-.svg-Icon_Arrow_Right {
-	background: url("svg/sprite.css-89a36560.svg") 86.66666666666667% 68.50507982583454% no-repeat;
+.svg-ill-failed {
+	background: url("svg/sprite.css-40823eef.svg") 75% 57.25806451612903% no-repeat;
 }
 
-.svg-Icon_Arrow_Right-dims {
-	width: 15px;
-	height: 15px;
+.svg-ill-failed-dims {
+	width: 90px;
+	height: 90px;
 }
 
-.svg-Icon_Checkmark_list {
-	background: url("svg/sprite.css-89a36560.svg") 99.53106682297772% 62.00873362445415% no-repeat;
+.svg-ill-generic-error {
+	background: url("svg/sprite.css-40823eef.svg") 0 100% no-repeat;
 }
 
-.svg-Icon_Checkmark_list-dims {
-	width: 17px;
-	height: 17px;
+.svg-ill-generic-error-dims {
+	width: 200px;
+	height: 196px;
 }
 
-.svg-Icon_Info {
-	background: url("svg/sprite.css-89a36560.svg") 99.88344988344988% 64.01734104046243% no-repeat;
+.svg-ill-qr {
+	background: url("svg/sprite.css-40823eef.svg") 97.5% 57.25806451612903% no-repeat;
 }
 
-.svg-Icon_Info-dims {
-	width: 12px;
-	height: 12px;
+.svg-ill-qr-dims {
+	width: 90px;
+	height: 90px;
 }
 
-.svg-Icon_LogIn {
-	background: url("svg/sprite.css-89a36560.svg") 97.49702026221692% 63.204747774480715% no-repeat;
+.svg-ill-success {
+	background: url("svg/sprite.css-40823eef.svg") 50% 94.35483870967742% no-repeat;
 }
 
-.svg-Icon_LogIn-dims {
-	width: 31px;
-	height: 30px;
+.svg-ill-success-dims {
+	width: 90px;
+	height: 90px;
 }
 
-.svg-Icon_Star_Empty {
-	background: url("svg/sprite.css-89a36560.svg") 95.78454332552693% 66.27906976744185% no-repeat;
+.svg-ill-timeout {
+	background: url("svg/sprite.css-40823eef.svg") 51.282051282051285% 57.72357723577236% no-repeat;
 }
 
-.svg-Icon_Star_Empty-dims {
-	width: 16px;
-	height: 16px;
+.svg-ill-timeout-dims {
+	width: 100px;
+	height: 92px;
 }
 
-.svg-Icon_Start_Filled {
-	background: url("svg/sprite.css-89a36560.svg") 83.13817330210773% 68.6046511627907% no-repeat;
+.svg-logo-moneyou {
+	background: url("svg/sprite.css-40823eef.svg") 0 0 no-repeat;
 }
 
-.svg-Icon_Start_Filled-dims {
-	width: 16px;
-	height: 16px;
-}
-
-.svg-Input_Checkmark_Unchecked {
-	background: url("svg/sprite.css-89a36560.svg") 88.3177570093458% 68.40579710144928% no-repeat;
-}
-
-.svg-Input_Checkmark_Unchecked-dims {
-	width: 14px;
-	height: 14px;
-}
-
-.svg-Input_Checkmark_checked {
-	background: url("svg/sprite.css-89a36560.svg") 89.95327102803738% 68.40579710144928% no-repeat;
-}
-
-.svg-Input_Checkmark_checked-dims {
-	width: 14px;
-	height: 14px;
-}
-
-.svg-Input_Radiobutton_Off {
-	background: url("svg/sprite.css-89a36560.svg") 94.4055944055944% 68.20809248554913% no-repeat;
-}
-
-.svg-Input_Radiobutton_Off-dims {
-	width: 12px;
-	height: 12px;
-}
-
-.svg-Input_Radiobutton_On {
-	background: url("svg/sprite.css-89a36560.svg") 93.00699300699301% 68.20809248554913% no-repeat;
-}
-
-.svg-Input_Radiobutton_On-dims {
-	width: 12px;
-	height: 12px;
-}
-
-.svg-Invest {
-	background: url("svg/sprite.css-89a36560.svg") 99.51456310679612% 57.75075987841945% no-repeat;
-}
-
-.svg-Invest-dims {
-	width: 46px;
-	height: 46px;
-}
-
-.svg-Loans {
-	background: url("svg/sprite.css-89a36560.svg") 82.52427184466019% 64.74164133738601% no-repeat;
-}
-
-.svg-Loans-dims {
-	width: 46px;
-	height: 46px;
-}
-
-.svg-MNY_Prod_illus_Festgeld {
-	background: url("svg/sprite.css-89a36560.svg") 72.05882352941177% 0 no-repeat;
-}
-
-.svg-MNY_Prod_illus_Festgeld-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Prod_illus_Invest {
-	background: url("svg/sprite.css-89a36560.svg") 0 99.92217898832685% no-repeat;
-}
-
-.svg-MNY_Prod_illus_Invest-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Prod_illus_Mortgage {
-	background: url("svg/sprite.css-89a36560.svg") 100% 36.96498054474708% no-repeat;
-}
-
-.svg-MNY_Prod_illus_Mortgage-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Prod_illus_Payments {
-	background: url("svg/sprite.css-89a36560.svg") 100% 0 no-repeat;
-}
-
-.svg-MNY_Prod_illus_Payments-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Prod_illus_Savings {
-	background: url("svg/sprite.css-89a36560.svg") 55.88235294117647% 62.95719844357977% no-repeat;
-}
-
-.svg-MNY_Prod_illus_Savings-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Prod_illus_Target {
-	background: url("svg/sprite.css-89a36560.svg") 27.941176470588236% 62.95719844357977% no-repeat;
-}
-
-.svg-MNY_Prod_illus_Target-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MNY_Product_illus_Loans {
-	background: url("svg/sprite.css-89a36560.svg") 0 62.95719844357977% no-repeat;
-}
-
-.svg-MNY_Product_illus_Loans-dims {
-	width: 190px;
-	height: 190px;
-}
-
-.svg-MoneYou_Logo_Horizontal {
-	background: url("svg/sprite.css-89a36560.svg") 0 11.912225705329154% no-repeat;
-}
-
-.svg-MoneYou_Logo_Horizontal-dims {
-	width: 434px;
-	height: 66px;
-}
-
-.svg-MoneYou_Logo_Wordmark {
-	background: url("svg/sprite.css-89a36560.svg") 0 0 no-repeat;
-}
-
-.svg-MoneYou_Logo_Wordmark-dims {
+.svg-logo-moneyou-dims {
 	width: 490px;
 	height: 76px;
 }
 
-.svg-More {
-	background: url("svg/sprite.css-89a36560.svg") 88.33535844471446% 57.75075987841945% no-repeat;
+.svg-logo-moneyou-rondjes {
+	background: url("svg/sprite.css-40823eef.svg") 0 27.941176470588236% no-repeat;
 }
 
-.svg-More-dims {
-	width: 47px;
-	height: 46px;
-}
-
-.svg-Mortgages {
-	background: url("svg/sprite.css-89a36560.svg") 93.93203883495146% 57.75075987841945% no-repeat;
-}
-
-.svg-Mortgages-dims {
-	width: 46px;
-	height: 46px;
-}
-
-.svg-Payment {
-	background: url("svg/sprite.css-89a36560.svg") 82.62454434993924% 57.75075987841945% no-repeat;
-}
-
-.svg-Payment-dims {
-	width: 47px;
-	height: 46px;
-}
-
-.svg-Savings {
-	background: url("svg/sprite.css-89a36560.svg") 93.68932038834951% 64.74164133738601% no-repeat;
-}
-
-.svg-Savings-dims {
-	width: 46px;
-	height: 46px;
-}
-
-.svg-Target_saving {
-	background: url("svg/sprite.css-89a36560.svg") 88.10679611650485% 64.74164133738601% no-repeat;
-}
-
-.svg-Target_saving-dims {
-	width: 46px;
-	height: 46px;
-}
-
-.svg-arrow_left {
-	background: url("svg/sprite.css-89a36560.svg") 84.91228070175438% 68.6046511627907% no-repeat;
-}
-
-.svg-arrow_left-dims {
-	width: 15px;
-	height: 16px;
-}
-
-.svg-btn-blue-dot {
-	background: url("svg/sprite.css-89a36560.svg") 80.95238095238095% 70.02967359050444% no-repeat;
-}
-
-.svg-btn-blue-dot-dims {
-	width: 30px;
-	height: 30px;
-}
-
-.svg-ideal-logo {
-	background: url("svg/sprite.css-89a36560.svg") 0 27.182235834609497% no-repeat;
-}
-
-.svg-ideal-logo-dims {
-	width: 208.2px;
-	height: 181.6px;
+.svg-logo-moneyou-rondjes-dims {
+	width: 434px;
+	height: 66px;
 }
 

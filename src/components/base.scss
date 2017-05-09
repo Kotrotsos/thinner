@@ -1,22 +1,27 @@
-@import 'shared/normal';
-@import 'shared/mixins/breakpoints';
+@import 'elements/normal';
+@import 'elements/mixins/breakpoints';
 
 /* Primary */
-@import 'shared/variables';
-@import 'shared/layout';
-@import 'shared/typography';
-@import 'shared/utilities';
+@import 'elements/variables';
+@import 'elements/layout';
+@import 'elements/typography';
+@import 'elements/utilities';
 
 @import 'fonts/fonts';
 @import 'grid/grid';
 
 /* Atoms */
-@import 'shared/button';
-@import 'shared/link';
-@import 'shared/image';
-@import 'shared/logo';
-@import 'shared/component';
-/* Molecules AKA components */
+@import 'elements/button';
+@import 'elements/link';
+@import 'elements/image';
+@import 'elements/logo';
+@import 'elements/section';
+@import 'elements/zindex';
 
+
+@import 'elements/qr-code';
+
+/* Molecules AKA components */
 @import 'card/card';
 @import 'navigation/navigation';
+@import 'ideal-price-box/ideal-price-box';

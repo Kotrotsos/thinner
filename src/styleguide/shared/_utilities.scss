@@ -1,0 +1,76 @@
+
+/* Margin & padding helpers */
+
+
+/* These padding utilities are considered to be page fillers and only valid on small and up sizes  */
+@include breakpoint(sm) {
+  .u-margin-1 { margin: $base-whitespace; }
+  .u-margin-5 { margin: $base-whitespace * 5; }
+}
+
+.u-margin-top-1 { margin-top: $base-whitespace; }
+.u-margin-top-2 { margin-top: $base-whitespace * 2; }
+
+.u-margin-bottom-1 { margin-bottom: $base-whitespace; }
+.u-margin-bottom-2 { margin-bottom: $base-whitespace * 2; }
+
+/* These padding utilities are considered to be page fillers and only valid on small and up sizes  */
+@include breakpoint(sm) {
+  .u-padding-1 { padding: $base-whitespace; }
+  .u-padding-5 { padding: $base-whitespace * 5;}
+}
+
+.u-padding-top-1 { padding-top: $base-whitespace; }
+.u-padding-top-2 { padding-top: $base-whitespace * 2; }
+
+.u-padding-bottom-1 { padding-bottom: $base-whitespace; }
+.u-padding-bottom-2 { padding-bottom: $base-whitespace * 2; }
+
+
+
+.u-section {
+  margin-bottom: $base-whitespace;
+}
+.u-section-padded {
+  padding: $base-whitespace * 1.5 0;
+}
+
+
+
+
+.u-align {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+
+
+@include breakpoint-down-to(sm) {
+  .align-center-on-sm {
+    text-align: center;
+  }
+  .align-left-on-sm {
+    text-align: left;
+  }
+}
+
+
+/* For screenreaders */
+
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

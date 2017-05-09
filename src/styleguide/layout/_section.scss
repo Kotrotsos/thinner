@@ -1,0 +1,27 @@
+.o-section {
+  margin: $base-whitespace * 1.5;
+  border-radius: $base-borderradius;
+  padding: $base-whitespace * 2;
+}
+
+
+
+@include breakpoint(md) {
+  // .o-section:first-child {
+  //   padding-left: $base-whitespace * 10;
+  //   padding-right: $base-whitespace * 10;
+  // }
+}
+
+.o-section-full {
+  margin: 0;
+}
+.o-section-framed {
+  border: solid $light-gray 1px;
+}
+.o-section-background {
+  background-color: $white;
+}
+.o-section * .o-section {
+  margin: 0;
+}

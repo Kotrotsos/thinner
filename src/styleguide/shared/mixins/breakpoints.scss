@@ -1,0 +1,53 @@
+
+/*
+    Usage :
+
+    aside.primary {
+      float: right;
+      width: 350px;
+      @include breakpoint(sm) {
+        float: none;
+        width: 100%;
+      }
+    }
+*/
+
+
+$s: 768px;
+$m: 992px;
+$l: 1200px;
+$xl: 1400px;
+
+@mixin breakpoint($class) {
+  // Everything larger than small
+  @if $class == sm {
+    @media (min-width: $s) { @content; }
+  }
+  @else if $class == md {
+    @media (min-width: $m) { @content; }
+  }
+  @else if $class == lg {
+    @media (min-width: $l) { @content; }
+  }
+  @else if $class == xl {
+    @media (min-width: $xl) { @content; }
+  }
+}
+
+// might not use, then remove this whole part
+@mixin breakpoint-down-to($class) {
+  // Everything larger than small
+  @if $class == sm {
+    @media (max-width: $s) { @content; }
+  }
+  @else if $class == md {
+    @media (max-width: $m) { @content; }
+  }
+  @else if $class == lg {
+    @media (max-width: $l) { @content; }
+  }
+  @else if $class == xl {
+    @media (max-width: $xl) { @content; }
+  }
+}
+// ===

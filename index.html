@@ -11,7 +11,7 @@
         border: solid red 1px;
         margin-bottom: 10px;
       }
-      .c-component {
+      .o-section {
 
       }
     </style>
@@ -26,10 +26,16 @@
     </div>
 
     <div class="o-container">
-        <div class="c-component c-component-background">
+        <div class="o-section o-section-background">
             <h3>grid, full width</h3>
             <p>Grid based on Flexbox</p>
             <div class="row">
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
+                <div class="column">column</div>
                 <div class="column">column</div>
                 <div class="column">column</div>
                 <div class="column">column</div>
@@ -59,18 +65,22 @@
 
 
 
-        <div class="c-component">
-            <h3>Doubled up</h3>
-
-            <div class="row paired">
-                <div class="column">pair</div>
-                <div class="column">pair</div>
+        <div class="o-section">
+            <h3>Expanded</h3>
+            <div class="row expanded">
+                <div class="column">row expanded</div>
+                <div class="column">row expanded</div>
             </div>
-
+            <div class="row expanded">
+                <div class="column">row expanded</div>
+                <div class="column">row expanded</div>
+                <div class="column">row expanded</div>
+            </div>
         </div>
 
 
-        <div class="c-component">
+
+        <div class="o-section">
             <h3>CTA Buttons</h3>
             <div class="section">
                 <div class="cta-button" role="button">Primary button</div>
@@ -87,7 +97,7 @@
             </div>
         </div>
 
-        <div class="c-component">
+        <div class="o-section">
             <div class="section">
                 <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
@@ -95,19 +105,18 @@
             </div>
 
         </div>
-        <div class="c-component c-component-full">
-            <h3>cards</h3>
-            <div class="card-deck">
-                <div class="card card--shadow">hello</div>
-                <div class="card card--shadow">hello</div>
-                <div class="card card--shadow">hello</div>
-            </div>
 
+
+        <hr>
+
+        <div class="o-section o-section-background">
+          <div class="row">
+            <div class="column">a</div>
+            <div class="column">b</div>
+          </div>
         </div>
-
-
     </div>
-    <script src="build/main.js"></script>
+    <script src="build/js/main.js"></script>
 </body>
 
 </html>

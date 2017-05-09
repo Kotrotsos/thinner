@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             options: {
                 configFile: '.sass-lint.yml',
             },
-            target: ['src/components/**/*.scss']
+            target: ['src/styleguide/**/*.scss']
         },
 
         /*
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                 }
             },
         },
-        
+
         /*
          * SASS:
          * Compile SASS files to CSS
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/css/main.css': 'src/components/base.scss'
+                    'build/css/main.css': 'src/styleguide/base.scss'
                 }
             }
         },
