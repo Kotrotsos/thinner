@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
 
     var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
-    var dev = ['clean', 'svg_sprite', 'sasslint', 'sass', 'concat', 'babel', 'copy', 'connect', 'watch'];
+    var dev = ['clean', 'sasslint', 'sass', 'concat', 'babel', 'copy', 'connect', 'watch'];
 
     grunt.initConfig({
 

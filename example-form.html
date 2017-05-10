@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="build/css/main.css">
+    <style>
+        .rdow {
+            border-top: dashed green 1px;
+        }
+
+        .coludmn {
+            border-left: dashed red 1px;
+        }
+    </style>
+
+    <title>my</title>
+</head>
+
+<body class="pale">
+
+    <div class="c-navigation c-navigation-isolated">
+        <img title="moneyou logo" class="o-logo" src="build/images/logo-moneyou-rondjes.svg">
+    </div>
+
+    <div class="o-container">
+        <div class="o-section o-section-background o-section-framed u-padding-5">
+            <div class="row">
+                <div class="column">
+                    <h3>Input fields. Normal, hover, focus</h3>
+                    <div class="control-group">
+                        <label for="field1">Input field normal</label>
+                        <input class="control-element" id="field1" type="text" placeholder="Placeholder text">
+                        <small><span class="control-text">uses 'has placeholder' pseudo selector for 'finished' state</span></small>
+                    </div>
+
+                    <div class="control-group control-group-has-error">
+                        <label for="field1">Input field error</label>
+                        <input class="control-element control-element-error" id="field1" type="text" value="Error">
+                        <span class="control-text">Error message</span>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="field1">Search input</label>
+                        <input class="control-element o-icon-search" id="field1" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row expanded">
+              <div class="column"><div class="control-group">
+
+                  <input class="control-element o-icon-bell" id="field1" type="text">
+              </div></div>
+              <div class="column"><div class="control-group">
+
+                  <input class="control-element o-icon-bell" id="field1" type="text">
+              </div></div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                  <div class="control-group">
+                  	<h3>Checkboxes</h3>
+                  	<label class="control-element control-checkbox u-margin-bottom-2">Checkbox
+                  		<input type="checkbox">
+                  		<div class="control-indicator"></div>
+                  	</label>
+                  	<label class="control-element control-checkbox u-margin-bottom-2">Checkbox checked
+                  		<input type="checkbox" checked="checked">
+                  		<div class="control-indicator"></div>
+                  	</label>
+                  	<label class="control-element control-checkbox u-margin-bottom-2">Disabled
+                  		<input type="checkbox" disabled="disabled">
+                  		<div class="control-indicator"></div>
+                  	</label>
+
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="build/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+
+
+/* Todo- BEMMIFY THIS*/
+
+.control-group {
+  margin-bottom: $base-whitespace * 2;
+  position: relative;
+  &.control-group-has-error {
+    color: $cardinal;
+  }
+}
+label {
+  display: inline-block;
+  margin-bottom: $base-whitespace;
+}
+.control-text {
+  position: relative;
+  top: $base-whitespace / 2;
+}
+.control-element[type="text"] {
+  display: block;
+  width: 100%;
+  padding: $base-whitespace * 1.5;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: $dark-gray;
+  background-color: $white;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid $light-gray;
+  border-radius: $base-borderradius;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  &::placeholder {
+    color: $medium-gray;
+  }
+  &:hover {
+    background-color: $pale;
+  }
+  &:focus {
+    border: solid $bondi-blue 1px;
+  }
+  &:focus:hover {
+    background-color: $white;
+  }
+  &:not(:placeholder-shown) {
+    border: solid $medium-gray 1px;
+  }
+  &.control-element-error {
+    @include svg-icon(icon-alert, right);
+    border: solid $cardinal 1px;
+  }
+  &.control-element-search {
+    @include svg-icon(icon-search, left);
+  }
+
+}
+
+.control-element.control-checkbox {
+  display: block;
+  position: relative;
+  padding-left: $base-whitespace * 4;
+  cursor: pointer;
+}
+.control-element.control-checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.control-indicator {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  height: 25px;
+  width: 25px;
+  background: $white;
+  border-radius: 5px;
+  border:solid $light-gray 2px;
+
+}
+.control--radio .control-indicator {
+  border-radius: 50%;
+}
+
+
+.control-element input:disabled ~ .control-indicator {
+  background: $light-gray;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control-indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control-element input:checked ~ .control-indicator {
+  border: none;
+}
+.control-element input:checked ~ .control-indicator:after {
+  display: block;
+
+
+}
+.control-checkbox .control-indicator:after {
+  background: url('../images/icon-checkbox-checked.svg') no-repeat;
+  width:25px;
+  height:25px;
+}
+.control-checkbox input:disabled ~ .control-indicator:after {
+  border-color: $light-gray;
+}
+.control--radio .control-indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: $white;
+}
+.control--radio input:disabled ~ .control-indicator:after {
+  background: $light-gray;
+}

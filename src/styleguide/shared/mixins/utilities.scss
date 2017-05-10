@@ -1,0 +1,13 @@
+// sass-lint:disable no-important
+
+$icon-path: "../images";
+@mixin svg-icon($name, $position: 'left') {
+  background: url(#{$icon-path}/#{$name}.svg) no-repeat;
+  background-position: 99% #{$position} no-repeat;
+  background-position: -webkit-calc(100% - 10px) center;
+  background-position: #{$position} 10px center;
+
+  @if ($position == 'left') {
+    padding-left: $base-whitespace * 4 !important;
+  }
+}

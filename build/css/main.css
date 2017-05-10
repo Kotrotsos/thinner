@@ -196,6 +196,83 @@ a:visited, .o-link:visited { color: #2AABCE; text-decoration: underline; }
 /* line 2, ../../src/styleguide/elements/_qr-code.scss */
 .o-qr-code { padding: 0 3rem; width: 400px; }
 
+/* Todo- BEMMIFY THIS*/
+/* line 5, ../../src/styleguide/elements/_form.scss */
+.control-group { margin-bottom: 2rem; position: relative; }
+/* line 8, ../../src/styleguide/elements/_form.scss */
+.control-group.control-group-has-error { color: #D40D47; }
+
+/* line 12, ../../src/styleguide/elements/_form.scss */
+label { display: inline-block; margin-bottom: 1rem; }
+
+/* line 16, ../../src/styleguide/elements/_form.scss */
+.control-text { position: relative; top: 0.5rem; }
+
+/* line 20, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"] { display: block; width: 100%; padding: 1.5rem; font-size: 1.5rem; line-height: 1.25; color: #2D353A; background-color: #FFFFFF; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #D2D9DA; border-radius: 6px; transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; }
+/* line 33, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]::placeholder { color: #A2ACAD; }
+/* line 36, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:hover { background-color: #F3F6F6; }
+/* line 39, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:focus { border: solid #2AABCE 1px; }
+/* line 42, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:focus:hover { background-color: #FFFFFF; }
+/* line 45, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:not(:placeholder-shown) { border: solid #A2ACAD 1px; }
+/* line 48, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"].control-element-error { background: url(../images/icon-alert.svg) no-repeat; background-position: 99% right no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: right 10px center; border: solid #D40D47 1px; }
+/* line 52, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"].control-element-search { background: url(../images/icon-search.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
+
+/* line 58, ../../src/styleguide/elements/_form.scss */
+.control-element.control-checkbox { display: block; position: relative; padding-left: 4rem; cursor: pointer; }
+
+/* line 64, ../../src/styleguide/elements/_form.scss */
+.control-element.control-checkbox input { position: absolute; z-index: -1; opacity: 0; }
+
+/* line 71, ../../src/styleguide/elements/_form.scss */
+.control-indicator { position: absolute; left: 0; top: -3px; height: 25px; width: 25px; background: #FFFFFF; border-radius: 5px; border: solid #D2D9DA 2px; }
+
+/* line 82, ../../src/styleguide/elements/_form.scss */
+.control--radio .control-indicator { border-radius: 50%; }
+
+/* line 87, ../../src/styleguide/elements/_form.scss */
+.control-element input:disabled ~ .control-indicator { background: #D2D9DA; opacity: 0.6; pointer-events: none; }
+
+/* line 92, ../../src/styleguide/elements/_form.scss */
+.control-indicator:after { content: ''; position: absolute; display: none; }
+
+/* line 97, ../../src/styleguide/elements/_form.scss */
+.control-element input:checked ~ .control-indicator { border: none; }
+
+/* line 100, ../../src/styleguide/elements/_form.scss */
+.control-element input:checked ~ .control-indicator:after { display: block; }
+
+/* line 105, ../../src/styleguide/elements/_form.scss */
+.control-checkbox .control-indicator:after { background: url("../images/icon-checkbox-checked.svg") no-repeat; width: 25px; height: 25px; }
+
+/* line 110, ../../src/styleguide/elements/_form.scss */
+.control-checkbox input:disabled ~ .control-indicator:after { border-color: #D2D9DA; }
+
+/* line 113, ../../src/styleguide/elements/_form.scss */
+.control--radio .control-indicator:after { left: 7px; top: 7px; height: 6px; width: 6px; border-radius: 50%; background: #FFFFFF; }
+
+/* line 121, ../../src/styleguide/elements/_form.scss */
+.control--radio input:disabled ~ .control-indicator:after { background: #D2D9DA; }
+
+/* line 2, ../../src/styleguide/elements/_icons.scss */
+[class^="o-icon-"] { padding: 0.5rem; }
+
+/* line 6, ../../src/styleguide/elements/_icons.scss */
+.o-icon-alert { background: url(../images/icon-alert.svg) no-repeat; background-position: 99% right no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: right 10px center; }
+
+/* line 10, ../../src/styleguide/elements/_icons.scss */
+.o-icon-search { background: url(../images/icon-search.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
+
+/* line 14, ../../src/styleguide/elements/_icons.scss */
+.o-icon-bell { background: url(../images/icon-bell.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
+
 /* Components */
 /* line 3, ../../src/styleguide/components/card/_card.scss */
 .card-deck { -js-display: flex; display: flex; flex-direction: column; }

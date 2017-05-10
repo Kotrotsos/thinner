@@ -1,6 +1,7 @@
 /* Shared */
 @import 'shared/normal';
 @import 'shared/mixins/breakpoints';
+@import 'shared/mixins/utilities';
 @import 'shared/variables';
 
 /* Identity */
@@ -19,6 +20,9 @@
 @import 'elements/link';
 @import 'elements/logo';
 @import 'elements/qr-code';
+@import 'elements/form';
+
+@import 'elements/icons';
 
 /* Components */
 @import 'components/card/card';

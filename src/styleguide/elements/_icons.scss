@@ -1,0 +1,16 @@
+
+[class^="o-icon-"] {
+  padding: $base-whitespace / 2;
+}
+
+.o-icon-alert {
+  @include svg-icon(icon-alert, right);
+}
+
+.o-icon-search {
+  @include svg-icon(icon-search, left);
+}
+
+.o-icon-bell {
+  @include svg-icon(icon-bell, left);
+}
