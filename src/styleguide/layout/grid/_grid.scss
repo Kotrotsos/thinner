@@ -60,3 +60,10 @@
     }
   }
 }
+@include breakpoint(md) {
+  .row-expand-on-md {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row;
+  }
+}

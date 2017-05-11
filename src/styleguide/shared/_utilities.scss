@@ -52,7 +52,23 @@
 }
 
 
+.u-hide-on-sm {
+  display: initial;
+}
+.u-show-on-sm {
+  display: block;
+}
 
+@include breakpoint(sm) {
+  .u-show-on-sm {
+    display: none;
+  }
+}
+@include breakpoint(md) {
+  .u-show-on-md {
+    display: none;
+  }
+}
 @include breakpoint-down-to(sm) {
   .align-center-on-sm {
     text-align: center;
@@ -60,8 +76,15 @@
   .align-left-on-sm {
     text-align: left;
   }
+  .u-hide-on-sm {
+    display: none;
+  }
 }
-
+@include breakpoint-down-to(md) {
+  .u-hide-on-md {
+    display: none;
+  }
+}
 
 /* For screenreaders */
 

@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
         /*
          * CONCAT:
-         * Merges all JS files into one
+         * Simply merges all JS files into one
         */
         concat: {
             js: {
