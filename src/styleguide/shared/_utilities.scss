@@ -13,6 +13,7 @@
 
 .u-margin-bottom-1 { margin-bottom: $base-whitespace; }
 .u-margin-bottom-2 { margin-bottom: $base-whitespace * 2; }
+.u-margin-bottom-3 { margin-bottom: $base-whitespace * 3; }
 
 /* These padding utilities are considered to be page fillers and only valid on small and up sizes  */
 @include breakpoint(sm) {

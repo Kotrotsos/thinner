@@ -43,27 +43,27 @@ img { max-width: 100%; height: auto; border: 0; }
 */
 /* Identity */
 /* line 4, ../../src/styleguide/identity/_typography.scss */
-h1, h2, h3 { display: block; font-family: "Lato"; font-weight: 700; }
+h1, h2, h3 { display: block; font-family: "Lato"; font-weight: 700; margin-bottom: 2rem; }
 
-/* line 10, ../../src/styleguide/identity/_typography.scss */
+/* line 11, ../../src/styleguide/identity/_typography.scss */
 h1 { font-size: 3.8rem; color: #D40D47; }
-@media (min-width: 768px) { /* line 10, ../../src/styleguide/identity/_typography.scss */
+@media (min-width: 768px) { /* line 11, ../../src/styleguide/identity/_typography.scss */
   h1 { font-size: 4.5rem; } }
-@media (min-width: 992px) { /* line 10, ../../src/styleguide/identity/_typography.scss */
+@media (min-width: 992px) { /* line 11, ../../src/styleguide/identity/_typography.scss */
   h1 { font-size: 5rem; } }
 
-/* line 23, ../../src/styleguide/identity/_typography.scss */
+/* line 24, ../../src/styleguide/identity/_typography.scss */
 h2 { font-size: 2.3rem; color: #89143A; }
-@media (min-width: 768px) { /* line 23, ../../src/styleguide/identity/_typography.scss */
+@media (min-width: 768px) { /* line 24, ../../src/styleguide/identity/_typography.scss */
   h2 { font-size: 2.6rem; } }
-@media (min-width: 992px) { /* line 23, ../../src/styleguide/identity/_typography.scss */
+@media (min-width: 992px) { /* line 24, ../../src/styleguide/identity/_typography.scss */
   h2 { font-size: 2.9rem; } }
 
-/* line 35, ../../src/styleguide/identity/_typography.scss */
-h3 { font-size: 2rem; color: #555390; margin-bottom: 1rem; }
-@media (min-width: 768px) { /* line 35, ../../src/styleguide/identity/_typography.scss */
+/* line 36, ../../src/styleguide/identity/_typography.scss */
+h3 { font-size: 2rem; color: #555390; }
+@media (min-width: 768px) { /* line 36, ../../src/styleguide/identity/_typography.scss */
   h3 { font-size: 2.2rem; } }
-@media (min-width: 992px) { /* line 35, ../../src/styleguide/identity/_typography.scss */
+@media (min-width: 992px) { /* line 36, ../../src/styleguide/identity/_typography.scss */
   h3 { font-size: 2.4rem; } }
 
 /* line 49, ../../src/styleguide/identity/_typography.scss */
@@ -209,56 +209,56 @@ label { display: inline-block; margin-bottom: 1rem; }
 .control-text { position: relative; top: 0.5rem; }
 
 /* line 20, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"] { display: block; width: 100%; padding: 1.5rem; font-size: 1.5rem; line-height: 1.25; color: #2D353A; background-color: #FFFFFF; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #D2D9DA; border-radius: 6px; transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; }
-/* line 33, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"]::placeholder { color: #A2ACAD; }
-/* line 36, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"]:hover { background-color: #F3F6F6; }
-/* line 39, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"]:focus { border: solid #2AABCE 1px; }
-/* line 42, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"]:focus:hover { background-color: #FFFFFF; }
-/* line 45, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"]:not(:placeholder-shown) { border: solid #A2ACAD 1px; }
-/* line 48, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"].control-element-error { background: url(../images/icon-alert.svg) no-repeat; background-position: 99% right no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: right 10px center; border: solid #D40D47 1px; }
+.control-element[type="text"], .control-element[type="number"], .control-element[type="password"], .control-element[type="email"] { display: block; width: 100%; padding: 1.5rem; font-size: 1.5rem; line-height: 1.25; color: #2D353A; background-color: #FFFFFF; -webkit-background-clip: padding-box; background-clip: padding-box; border: 1px solid #D2D9DA; border-radius: 6px; transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; caret-color: #2AABCE; }
+/* line 37, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]::placeholder, .control-element[type="number"]::placeholder, .control-element[type="password"]::placeholder, .control-element[type="email"]::placeholder { color: #A2ACAD; }
+/* line 40, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:hover, .control-element[type="number"]:hover, .control-element[type="password"]:hover, .control-element[type="email"]:hover { background-color: #F3F6F6; }
+/* line 43, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:focus, .control-element[type="number"]:focus, .control-element[type="password"]:focus, .control-element[type="email"]:focus { border: solid #2AABCE 1px; }
+/* line 46, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:focus:hover, .control-element[type="number"]:focus:hover, .control-element[type="password"]:focus:hover, .control-element[type="email"]:focus:hover { background-color: #FFFFFF; }
+/* line 49, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"]:not(:placeholder-shown), .control-element[type="number"]:not(:placeholder-shown), .control-element[type="password"]:not(:placeholder-shown), .control-element[type="email"]:not(:placeholder-shown) { border: solid #A2ACAD 1px; }
 /* line 52, ../../src/styleguide/elements/_form.scss */
-.control-element[type="text"].control-element-search { background: url(../images/icon-search.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
+.control-element[type="text"].control-element-error, .control-element[type="number"].control-element-error, .control-element[type="password"].control-element-error, .control-element[type="email"].control-element-error { background: url(../images/icon-alert.svg) no-repeat; background-position: 99% right no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: right 10px center; border: solid #D40D47 1px; }
+/* line 56, ../../src/styleguide/elements/_form.scss */
+.control-element[type="text"].control-element-search, .control-element[type="number"].control-element-search, .control-element[type="password"].control-element-search, .control-element[type="email"].control-element-search { background: url(../images/icon-search.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
 
-/* line 58, ../../src/styleguide/elements/_form.scss */
+/* line 62, ../../src/styleguide/elements/_form.scss */
 .control-element.control-checkbox { display: block; position: relative; padding-left: 4rem; cursor: pointer; }
 
-/* line 64, ../../src/styleguide/elements/_form.scss */
+/* line 68, ../../src/styleguide/elements/_form.scss */
 .control-element.control-checkbox input { position: absolute; z-index: -1; opacity: 0; }
 
-/* line 71, ../../src/styleguide/elements/_form.scss */
+/* line 75, ../../src/styleguide/elements/_form.scss */
 .control-indicator { position: absolute; left: 0; top: -3px; height: 25px; width: 25px; background: #FFFFFF; border-radius: 5px; border: solid #D2D9DA 2px; }
 
-/* line 82, ../../src/styleguide/elements/_form.scss */
+/* line 86, ../../src/styleguide/elements/_form.scss */
 .control--radio .control-indicator { border-radius: 50%; }
 
-/* line 87, ../../src/styleguide/elements/_form.scss */
+/* line 91, ../../src/styleguide/elements/_form.scss */
 .control-element input:disabled ~ .control-indicator { background: #D2D9DA; opacity: 0.6; pointer-events: none; }
 
-/* line 92, ../../src/styleguide/elements/_form.scss */
+/* line 96, ../../src/styleguide/elements/_form.scss */
 .control-indicator:after { content: ''; position: absolute; display: none; }
 
-/* line 97, ../../src/styleguide/elements/_form.scss */
+/* line 101, ../../src/styleguide/elements/_form.scss */
 .control-element input:checked ~ .control-indicator { border: none; }
 
-/* line 100, ../../src/styleguide/elements/_form.scss */
+/* line 104, ../../src/styleguide/elements/_form.scss */
 .control-element input:checked ~ .control-indicator:after { display: block; }
 
-/* line 105, ../../src/styleguide/elements/_form.scss */
+/* line 109, ../../src/styleguide/elements/_form.scss */
 .control-checkbox .control-indicator:after { background: url("../images/icon-checkbox-checked.svg") no-repeat; width: 25px; height: 25px; }
 
-/* line 110, ../../src/styleguide/elements/_form.scss */
+/* line 114, ../../src/styleguide/elements/_form.scss */
 .control-checkbox input:disabled ~ .control-indicator:after { border-color: #D2D9DA; }
 
-/* line 113, ../../src/styleguide/elements/_form.scss */
+/* line 117, ../../src/styleguide/elements/_form.scss */
 .control--radio .control-indicator:after { left: 7px; top: 7px; height: 6px; width: 6px; border-radius: 50%; background: #FFFFFF; }
 
-/* line 121, ../../src/styleguide/elements/_form.scss */
+/* line 125, ../../src/styleguide/elements/_form.scss */
 .control--radio input:disabled ~ .control-indicator:after { background: #D2D9DA; }
 
 /* line 2, ../../src/styleguide/elements/_icons.scss */
@@ -291,7 +291,7 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 2, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation { /* Navigation isolated is for pages like Ideal payments where there is only a logo */ }
 /* line 5, ../../src/styleguide/components/navigation/navigation.scss */
-.c-navigation.c-navigation-isolated { text-align: center; padding-top: 4rem; height: 10rem; }
+.c-navigation.c-navigation-isolated { text-align: center; padding-top: 2rem; height: 6rem; }
 
 /* line 2, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
 .c-ideal-price-box { display: flex; border: solid #D2D9DA 1px; padding: 1rem; border-radius: 6px; align-items: center; justify-content: center; }
@@ -300,9 +300,9 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 13, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
 .c-ideal-price-box-description { flex: 1; font-size: 1.3rem; margin-right: 1rem; }
 /* line 18, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
-.c-ideal-price-box-up { font-size: 1.3rem; }
-/* line 21, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
-.c-ideal-price-box-price { font-size: 3rem; width: 65px; }
+.c-ideal-price-box-up { font-size: 1.3rem; position: relative; top: -1rem; }
+/* line 23, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
+.c-ideal-price-box-price { font-size: 3rem; width: 100px; text-align: right; }
 
 /* Tail */
 /* Margin & padding helpers */
@@ -323,42 +323,45 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 15, ../../src/styleguide/shared/_utilities.scss */
 .u-margin-bottom-2 { margin-bottom: 2rem; }
 
+/* line 16, ../../src/styleguide/shared/_utilities.scss */
+.u-margin-bottom-3 { margin-bottom: 3rem; }
+
 /* These padding utilities are considered to be page fillers and only valid on small and up sizes  */
-@media (min-width: 768px) { /* line 19, ../../src/styleguide/shared/_utilities.scss */
+@media (min-width: 768px) { /* line 20, ../../src/styleguide/shared/_utilities.scss */
   .u-padding-1 { padding: 1rem; }
-  /* line 20, ../../src/styleguide/shared/_utilities.scss */
+  /* line 21, ../../src/styleguide/shared/_utilities.scss */
   .u-padding-5 { padding: 5rem; } }
-/* line 23, ../../src/styleguide/shared/_utilities.scss */
+/* line 24, ../../src/styleguide/shared/_utilities.scss */
 .u-padding-top-1 { padding-top: 1rem; }
 
-/* line 24, ../../src/styleguide/shared/_utilities.scss */
+/* line 25, ../../src/styleguide/shared/_utilities.scss */
 .u-padding-top-2 { padding-top: 2rem; }
 
-/* line 26, ../../src/styleguide/shared/_utilities.scss */
+/* line 27, ../../src/styleguide/shared/_utilities.scss */
 .u-padding-bottom-1 { padding-bottom: 1rem; }
 
-/* line 27, ../../src/styleguide/shared/_utilities.scss */
+/* line 28, ../../src/styleguide/shared/_utilities.scss */
 .u-padding-bottom-2 { padding-bottom: 2rem; }
 
-/* line 31, ../../src/styleguide/shared/_utilities.scss */
+/* line 32, ../../src/styleguide/shared/_utilities.scss */
 .u-section { margin-bottom: 1rem; }
 
-/* line 34, ../../src/styleguide/shared/_utilities.scss */
+/* line 35, ../../src/styleguide/shared/_utilities.scss */
 .u-section-padded { padding: 1.5rem 0; }
 
-/* line 42, ../../src/styleguide/shared/_utilities.scss */
+/* line 43, ../../src/styleguide/shared/_utilities.scss */
 .u-align-center { text-align: center; }
-/* line 45, ../../src/styleguide/shared/_utilities.scss */
+/* line 46, ../../src/styleguide/shared/_utilities.scss */
 .u-align-left { text-align: left; }
-/* line 48, ../../src/styleguide/shared/_utilities.scss */
+/* line 49, ../../src/styleguide/shared/_utilities.scss */
 .u-align-right { text-align: right; }
 
-@media (max-width: 768px) { /* line 56, ../../src/styleguide/shared/_utilities.scss */
+@media (max-width: 768px) { /* line 57, ../../src/styleguide/shared/_utilities.scss */
   .align-center-on-sm { text-align: center; }
-  /* line 59, ../../src/styleguide/shared/_utilities.scss */
+  /* line 60, ../../src/styleguide/shared/_utilities.scss */
   .align-left-on-sm { text-align: left; } }
 /* For screenreaders */
-/* line 67, ../../src/styleguide/shared/_utilities.scss */
+/* line 68, ../../src/styleguide/shared/_utilities.scss */
 .u-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 /*# sourceMappingURL=main.css.map */

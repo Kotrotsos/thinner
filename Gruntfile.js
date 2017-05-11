@@ -104,7 +104,7 @@ module.exports = function(grunt) {
         */
         concat: {
             js: {
-                src: ['src/js/*.js'],
+                src: ['src/js/moyo*.js'],
                 dest: 'src/temp/temp.js'
             }
         },
@@ -119,9 +119,9 @@ module.exports = function(grunt) {
                 presets: ['es2015']
             },
             dist: {
-                files: {
+                files: [{
                     'build/js/main.js': 'src/temp/temp.js'
-                }
+                }]
             }
         },
 

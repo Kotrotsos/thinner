@@ -17,10 +17,13 @@
     }
     &-up {
       font-size: 1.3rem;
+      position:relative;
+      top: -$base-whitespace;
     }
     &-price {
       font-size: 3rem;
-      width: 65px;
+      width: 100px;
+      text-align: right;
     }
   }
 }

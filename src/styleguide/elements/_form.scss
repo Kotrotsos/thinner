@@ -17,7 +17,10 @@ label {
   position: relative;
   top: $base-whitespace / 2;
 }
-.control-element[type="text"] {
+.control-element[type="text"],
+.control-element[type="number"],
+.control-element[type="password"],
+.control-element[type="email"] {
   display: block;
   width: 100%;
   padding: $base-whitespace * 1.5;
@@ -30,6 +33,7 @@ label {
   border: 1px solid $light-gray;
   border-radius: $base-borderradius;
   transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  caret-color: $bondi-blue;
   &::placeholder {
     color: $medium-gray;
   }
