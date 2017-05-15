@@ -56,7 +56,6 @@ label {
   &.control-element-search {
     @include svg-icon(icon-search, left);
   }
-
 }
 
 .control-element.control-checkbox {
@@ -83,7 +82,7 @@ label {
   border:solid $light-gray 2px;
 
 }
-.control--radio .control-indicator {
+.control-radio .control-indicator {
   border-radius: 50%;
 }
 
@@ -114,7 +113,7 @@ label {
 .control-checkbox input:disabled ~ .control-indicator:after {
   border-color: $light-gray;
 }
-.control--radio .control-indicator:after {
+.control-radio .control-indicator:after {
   left: 7px;
   top: 7px;
   height: 6px;
@@ -122,6 +121,6 @@ label {
   border-radius: 50%;
   background: $white;
 }
-.control--radio input:disabled ~ .control-indicator:after {
+.control-radio input:disabled ~ .control-indicator:after {
   background: $light-gray;
 }

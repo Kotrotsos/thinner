@@ -225,41 +225,41 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 56, ../../src/styleguide/elements/_form.scss */
 .control-element[type="text"].control-element-search, .control-element[type="number"].control-element-search, .control-element[type="password"].control-element-search, .control-element[type="email"].control-element-search { background: url(../images/icon-search.svg) no-repeat; background-position: 99% left no-repeat; background-position: -webkit-calc(100% - 10px) center; background-position: left 10px center; padding-left: 4rem !important; }
 
-/* line 62, ../../src/styleguide/elements/_form.scss */
+/* line 61, ../../src/styleguide/elements/_form.scss */
 .control-element.control-checkbox { display: block; position: relative; padding-left: 4rem; cursor: pointer; }
 
-/* line 68, ../../src/styleguide/elements/_form.scss */
+/* line 67, ../../src/styleguide/elements/_form.scss */
 .control-element.control-checkbox input { position: absolute; z-index: -1; opacity: 0; }
 
-/* line 75, ../../src/styleguide/elements/_form.scss */
+/* line 74, ../../src/styleguide/elements/_form.scss */
 .control-indicator { position: absolute; left: 0; top: -3px; height: 25px; width: 25px; background: #FFFFFF; border-radius: 5px; border: solid #D2D9DA 2px; }
 
-/* line 86, ../../src/styleguide/elements/_form.scss */
-.control--radio .control-indicator { border-radius: 50%; }
+/* line 85, ../../src/styleguide/elements/_form.scss */
+.control-radio .control-indicator { border-radius: 50%; }
 
-/* line 91, ../../src/styleguide/elements/_form.scss */
+/* line 90, ../../src/styleguide/elements/_form.scss */
 .control-element input:disabled ~ .control-indicator { background: #D2D9DA; opacity: 0.6; pointer-events: none; }
 
-/* line 96, ../../src/styleguide/elements/_form.scss */
+/* line 95, ../../src/styleguide/elements/_form.scss */
 .control-indicator:after { content: ''; position: absolute; display: none; }
 
-/* line 101, ../../src/styleguide/elements/_form.scss */
+/* line 100, ../../src/styleguide/elements/_form.scss */
 .control-element input:checked ~ .control-indicator { border: none; }
 
-/* line 104, ../../src/styleguide/elements/_form.scss */
+/* line 103, ../../src/styleguide/elements/_form.scss */
 .control-element input:checked ~ .control-indicator:after { display: block; }
 
-/* line 109, ../../src/styleguide/elements/_form.scss */
+/* line 108, ../../src/styleguide/elements/_form.scss */
 .control-checkbox .control-indicator:after { background: url("../images/icon-checkbox-checked.svg") no-repeat; width: 25px; height: 25px; }
 
-/* line 114, ../../src/styleguide/elements/_form.scss */
+/* line 113, ../../src/styleguide/elements/_form.scss */
 .control-checkbox input:disabled ~ .control-indicator:after { border-color: #D2D9DA; }
 
-/* line 117, ../../src/styleguide/elements/_form.scss */
-.control--radio .control-indicator:after { left: 7px; top: 7px; height: 6px; width: 6px; border-radius: 50%; background: #FFFFFF; }
+/* line 116, ../../src/styleguide/elements/_form.scss */
+.control-radio .control-indicator:after { left: 7px; top: 7px; height: 6px; width: 6px; border-radius: 50%; background: #FFFFFF; }
 
-/* line 125, ../../src/styleguide/elements/_form.scss */
-.control--radio input:disabled ~ .control-indicator:after { background: #D2D9DA; }
+/* line 124, ../../src/styleguide/elements/_form.scss */
+.control-radio input:disabled ~ .control-indicator:after { background: #D2D9DA; }
 
 /* line 2, ../../src/styleguide/elements/_icons.scss */
 [class^="o-icon-"] { padding: 0.5rem; }

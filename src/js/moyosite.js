@@ -9,9 +9,7 @@ window.isMobile = function() {
 };
 
 // register
-Vue.component('moyo-logo', {
-  template: '<div>A custom component!</div>'
-})
+
 
 new Vue({
       el: '#moyo',
