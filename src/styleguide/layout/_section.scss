@@ -25,3 +25,13 @@
 .o-section * .o-section {
   margin: 0;
 }
+
+.o-section.o-section-constrict {
+  padding-left:0;
+  padding-right: 0;
+
+  @include breakpoint(sm) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

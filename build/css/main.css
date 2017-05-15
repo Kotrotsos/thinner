@@ -165,27 +165,35 @@ body.pale { background-color: #F3F6F6; }
 /* line 25, ../../src/styleguide/layout/_section.scss */
 .o-section * .o-section { margin: 0; }
 
+/* line 29, ../../src/styleguide/layout/_section.scss */
+.o-section.o-section-constrict { padding-left: 0; padding-right: 0; }
+@media (min-width: 768px) { /* line 29, ../../src/styleguide/layout/_section.scss */
+  .o-section.o-section-constrict { padding-left: 100px; padding-right: 100px; } }
+
 /* Elements */
 /* line 4, ../../src/styleguide/elements/_button.scss */
-.c-cta-button { width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
+.o-cta-button { width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
 @media (min-width: 768px) { /* line 4, ../../src/styleguide/elements/_button.scss */
-  .c-cta-button { display: inline-block; width: initial; margin-bottom: initial; } }
+  .o-cta-button { display: inline-block; width: initial; margin-bottom: initial; } }
 /* line 30, ../../src/styleguide/elements/_button.scss */
-.c-cta-button:focus, .c-cta-button:hover { background-color: #1C95B6; color: #FFFFFF; outline: 0; }
+.o-cta-button:focus, .o-cta-button:hover { background-color: #1C95B6; color: #FFFFFF; outline: 0; }
 /* line 37, ../../src/styleguide/elements/_button.scss */
-.c-cta-button.c-cta-button-secondary { background-color: #FFFFFF; border-color: #2AABCE; color: #2AABCE; }
+.o-cta-button.o-cta-button-secondary { background-color: #FFFFFF; border-color: #2AABCE; color: #2AABCE; }
 /* line 42, ../../src/styleguide/elements/_button.scss */
-.c-cta-button.c-cta-button-secondary:focus, .c-cta-button.c-cta-button-secondary:hover { background-color: #F3F6F6; border-color: #2AABCE; color: #2AABCE; outline: 0; }
+.o-cta-button.o-cta-button-secondary:focus, .o-cta-button.o-cta-button-secondary:hover { background-color: #F3F6F6; border-color: #2AABCE; color: #2AABCE; outline: 0; }
 /* line 51, ../../src/styleguide/elements/_button.scss */
-.c-cta-button.c-cta-button-link { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; }
+.o-cta-button.o-cta-button-link { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; }
 /* line 58, ../../src/styleguide/elements/_button.scss */
-.c-cta-button.c-cta-button-link:after { display: inline-block; margin-left: 10px; content: ""; text-decoration: underline; background: url("svg/sprite.css-7a34b6b4.svg") 86.66667% 68.50508% no-repeat; position: relative; top: 1px; width: 15px; height: 15px; }
+.o-cta-button.o-cta-button-link:after { display: inline-block; margin-left: 10px; content: ""; text-decoration: underline; background: url("svg/sprite.css-7a34b6b4.svg") 86.66667% 68.50508% no-repeat; position: relative; top: 1px; width: 15px; height: 15px; }
 /* line 70, ../../src/styleguide/elements/_button.scss */
-.c-cta-button.c-cta-button-link:focus, .c-cta-button.c-cta-button-link:hover { background-color: transparent; border-color: 0; color: #2D353A; outline: 0; text-decoration: none; }
+.o-cta-button.o-cta-button-link:focus, .o-cta-button.o-cta-button-link:hover { background-color: transparent; border-color: 0; color: #2D353A; outline: 0; text-decoration: none; }
 /* line 80, ../../src/styleguide/elements/_button.scss */
-.c-cta-button[disabled], .c-cta-button.disabled { background-color: #F3F6F6; border: transparent; color: #D2D9DA; cursor: default; }
+.o-cta-button[disabled], .o-cta-button.disabled { background-color: #F3F6F6; border: transparent; color: #D2D9DA; cursor: default; }
 /* line 85, ../../src/styleguide/elements/_button.scss */
-.c-cta-button[disabled]:focus, .c-cta-button[disabled]:hover, .c-cta-button.disabled:focus, .c-cta-button.disabled:hover { color: #D2D9DA; }
+.o-cta-button[disabled]:focus, .o-cta-button[disabled]:hover, .o-cta-button.disabled:focus, .o-cta-button.disabled:hover { color: #D2D9DA; }
+
+/* line 6, ../../src/styleguide/elements/_image.scss */
+.o-image-x2 { width: 20rem; }
 
 /* line 1, ../../src/styleguide/elements/_link.scss */
 a, .o-link { color: #2AABCE; text-decoration: underline; font-weight: 500; transition: all 100ms; }
@@ -383,5 +391,17 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* For screenreaders */
 /* line 91, ../../src/styleguide/shared/_utilities.scss */
 .u-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+/* line 104, ../../src/styleguide/shared/_utilities.scss */
+.on-mobile-device { display: none; }
+
+/* line 107, ../../src/styleguide/shared/_utilities.scss */
+.on-desktop-device { display: none; }
+
+/* line 110, ../../src/styleguide/shared/_utilities.scss */
+body.is_mobile .on-mobile-device { display: block; }
+
+/* line 113, ../../src/styleguide/shared/_utilities.scss */
+body.is_desktop .on-desktop-device { display: block; }
 
 /*# sourceMappingURL=main.css.map */

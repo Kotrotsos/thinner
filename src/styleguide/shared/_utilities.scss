@@ -98,3 +98,18 @@
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+
+
+.on-mobile-device {
+  display:none;
+}
+.on-desktop-device {
+  display: none;
+}
+body.is_mobile .on-mobile-device {
+  display: block;
+}
+body.is_desktop .on-desktop-device {
+  display: block;
+}

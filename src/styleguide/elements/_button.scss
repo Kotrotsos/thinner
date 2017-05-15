@@ -1,7 +1,7 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.c-cta-button {
+.o-cta-button {
   width: 100%;
   background-color: $bondi-blue;
   color: $white;
@@ -34,7 +34,7 @@
     outline: 0;
   }
 
-  &.c-cta-button-secondary {
+  &.o-cta-button-secondary {
     background-color: $white;
     border-color: $bondi-blue;
     color: $bondi-blue;
@@ -48,7 +48,7 @@
     }
   }
 
-  &.c-cta-button-link {
+  &.o-cta-button-link {
     background-color: transparent;
     border-color: transparent;
     color: $bondi-blue;
@@ -90,14 +90,14 @@
 }
 
 
-.c-button {
-  .c-button_icon {
+.o-button {
+  .o-button_icon {
 
   }
-  .c-button_icon-savings {
+  .o-button_icon-savings {
 
   }
-  .c-button_icon-invest {
+  .o-button_icon-invest {
 
   }
 
