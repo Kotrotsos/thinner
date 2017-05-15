@@ -1,6 +1,4 @@
-(function() {
 
-})();
 
 window.isMobile = function() {
     var check = false;
@@ -9,3 +7,14 @@ window.isMobile = function() {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
 };
+
+// register
+Vue.component('moyo-logo', {
+  template: '<div>A custom component!</div>'
+})
+
+new Vue({
+      el: '#moyo',
+      data: { },
+      methods: { }
+    });

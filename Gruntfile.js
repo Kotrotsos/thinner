@@ -104,9 +104,16 @@ module.exports = function(grunt) {
         */
         concat: {
             js: {
-                src: ['src/js/moyo*.js'],
-                dest: 'src/temp/temp.js'
-            }
+              files: [
+                {
+                  src: ['src/js/*.js'],
+                  dest: 'src/temp/temp.js'
+                }, {
+                  src: ['src/js/vendor/**/*.*'],
+                  dest: 'build/js/vendor.js'
+                }
+              ]
+          }
         },
 
         /*
