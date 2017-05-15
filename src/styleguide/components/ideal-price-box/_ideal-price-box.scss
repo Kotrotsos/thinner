@@ -2,16 +2,19 @@
   &-price-box {
     display:flex;
     border: solid $light-gray 1px;
-    padding: $base-whitespace;
+    padding: $base-whitespace * 2;
     border-radius: $base-borderradius;
     align-items: center;
     justify-content: center;
     &-logo {
-
-      width: 53px;
+      flex: 1;
+      padding-right:$base-whitespace;
+      @include breakpoint(sm) {
+        padding-right: initial;
+      }
     }
     &-description {
-      flex: 1;
+      flex: 2;
       font-size: 1.3rem;
       margin-right: $base-whitespace;
     }
@@ -21,8 +24,9 @@
       top: -$base-whitespace;
     }
     &-price {
+      flex: 2;
       font-size: 3rem;
-      width: 100px;
+
       text-align: right;
     }
   }
