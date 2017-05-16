@@ -1,5 +1,16 @@
 
 .c-navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  height: 46px;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(63,63,63,0.15);
+  z-index: $zindex-navbar;
+  @include breakpoint(sm) {
+    height: 60px;
+  }
 
   /* Navigation isolated is for pages like Ideal payments where there is only a logo */
   &.c-navigation-isolated {
@@ -8,7 +19,32 @@
     height: 6rem;
   }
 
-  .c-navigation-logo {
+  &_logo {
+    flex: 1;
+    @include breakpoint(sm) {
 
+    }
+  }
+  &_menu {
+    flex: 1;
+    @include breakpoint(sm) {
+
+
+
+    }
+    .o-list-item {
+      margin-right: $base-whitespace * 2;
+    }
+  }
+  &_care {
+    flex: 1;
+    line-height: 1;
+    @include breakpoint(sm) {
+      float:right;
+      width: $base-whitespace * 20;
+    }
+    .c-navigation-care_customer-care {
+      width: 150px;
+    }
   }
 }

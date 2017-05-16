@@ -1,0 +1,8 @@
+@import '../shared/mixins/hamburger';
+
+.o-hamburger {
+  @include hamburger();
+  position: absolute;
+  right: $base-whitespace;
+  top: 15px;
+}

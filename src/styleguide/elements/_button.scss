@@ -1,7 +1,9 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.cta-button {
+.o-button,
+button,
+[type="submit"] {
   width: 100%;
   background-color: $bondi-blue;
   color: $white;
@@ -34,7 +36,7 @@
     outline: 0;
   }
 
-  &.cta-button-secondary {
+  &.o-button-secondary {
     background-color: $white;
     border-color: $bondi-blue;
     color: $bondi-blue;
@@ -48,23 +50,24 @@
     }
   }
 
-  &.cta-button-link {
+  &.o-button-link {
     background-color: transparent;
     border-color: transparent;
     color: $bondi-blue;
     font-weight: 500;
     text-decoration: none;
+    padding-left:0;
 
     &:after {
       display: inline-block;
       margin-left: 10px;
       content: "";
       text-decoration: underline;
-      background: url("svg/sprite.css-7a34b6b4.svg") 86.66666666666667% 68.50507982583454% no-repeat;
+      background: url("../images/icon-arrow-right.svg") no-repeat;
       position: relative;
-      top: 1px;
+      top: 2px;
       width: 15px;
-      height: 15px;
+      height: 16px;
     }
 
     &:focus,
@@ -75,8 +78,15 @@
       outline: 0;
       text-decoration: none;
     }
-  }
 
+  }
+  &.o-button-small {
+    height: 50px;
+    padding: 1rem 2rem;
+    line-height: 0;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
   &[disabled], &.disabled {
     background-color: $pale;
     border: transparent;

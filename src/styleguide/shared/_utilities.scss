@@ -36,9 +36,6 @@
   padding: $base-whitespace * 1.5 0;
 }
 
-
-
-
 .u-align {
   &-center {
     text-align: center;
@@ -51,6 +48,9 @@
   }
 }
 
+.u-inline {
+  display: inline;
+}
 
 
 @include breakpoint-down-to(sm) {

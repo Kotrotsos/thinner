@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="build/css/main.css">
     <style>
-      .column {
+      .flex-item {
         border: solid red 1px;
         margin-bottom: 10px;
       }
@@ -29,36 +29,36 @@
         <div class="o-section o-section-background">
             <h3>grid, full width</h3>
             <p>Grid based on Flexbox</p>
-            <div class="row">
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
+            <div class="flex-container">
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
             </div>
 
-            <div class="row">
-                <div class="column">column<br><br>Some low text</div>
-                <div class="column"> column<br> </div>
+            <div class="flex-container">
+                <div class="flex-item">flex-item<br><br>Some low text</div>
+                <div class="flex-item"> flex-item<br> </div>
             </div>
 
-            <div class="row">
-                <div class="column">column</div>
-                <div class="column">column</div>
-                <div class="column">column</div>
+            <div class="flex-container">
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item">flex-item</div>
             </div>
 
-            <div class="row">
-                <div class="column">column</div>
-                <div class="column grow-2">column grow-2</div>
-                <div class="column">column</div>
+            <div class="flex-container">
+                <div class="flex-item">flex-item</div>
+                <div class="flex-item gflex-container-2">flex-item gflex-container-2</div>
+                <div class="flex-item">flex-item</div>
             </div>
         </div>
 
@@ -67,14 +67,14 @@
 
         <div class="o-section">
             <h3>Expanded</h3>
-            <div class="row expanded">
-                <div class="column">row expanded</div>
-                <div class="column">row expanded</div>
+            <div class="flex-container expanded">
+                <div class="flex-item">flex-container expanded</div>
+                <div class="flex-item">flex-container expanded</div>
             </div>
-            <div class="row expanded">
-                <div class="column">row expanded</div>
-                <div class="column">row expanded</div>
-                <div class="column">row expanded</div>
+            <div class="flex-container expanded">
+                <div class="flex-item">flex-container expanded</div>
+                <div class="flex-item">flex-container expanded</div>
+                <div class="flex-item">flex-container expanded</div>
             </div>
         </div>
 
@@ -83,12 +83,12 @@
         <div class="o-section">
             <h3>CTA Buttons</h3>
             <div class="section">
-                <div class="cta-button" role="button">Primary button</div>
-                <div class="cta-button cta-button-secondary" role="button">Secondary button</div>
-                <div class="cta-button cta-button-link" role="button">Secondary link</div>
+                <div class="o-button" role="button">Primary button</div>
+                <div class="o-button o-button-secondary" role="button">Secondary button</div>
+                <div class="o-button o-button-link" role="button">Secondary link</div>
 
-                <button class="cta-button" disabled role="button">Primary button</button>
-                <button class="cta-button cta-button-secondary" disabled role="button">Secondary button</button>
+                <button class="o-button" disabled role="button">Primary button</button>
+                <button class="o-button o-button-secondary" disabled role="button">Secondary button</button>
 
             </div>
 
@@ -110,9 +110,9 @@
         <hr>
 
         <div class="o-section o-section-background">
-          <div class="row">
-            <div class="column">a</div>
-            <div class="column">b</div>
+          <div class="flex-container">
+            <div class="flex-item">a</div>
+            <div class="flex-item">b</div>
           </div>
         </div>
     </div>

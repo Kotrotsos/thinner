@@ -1,7 +1,7 @@
 
 
 
-.row {
+.flex-container{
   -js-display: flex;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   &.expanded {
     flex-direction: row;
 
-    > .column {
+    > .flex-item {
       margin-right: $base-grid-gutter;
       &:last-of-type {
         margin-right: 0;
@@ -18,10 +18,10 @@
   }
 }
 
-.column {
+.flex-item {
   flex: 1;
 }
-.column-expand {
+.flex-item-expand {
   flex: 1 1 auto;
 }
 
@@ -44,15 +44,14 @@
   align-items: center;
 }
 
-// Everything smaller than
 @include breakpoint(sm) {
-  .row {
+  .flex-container{
     -js-display: flex;
     display: flex;
     flex-direction: row;
   }
 
-  div[class^="col"] {
+  .flex-item {
     margin-right: $base-grid-gutter;
 
     &:last-of-type {

@@ -1,6 +1,11 @@
 
 .o-logo {
-  height: 33px;
+  height: 60px;
+  min-width: 120px;
+
+  @include breakpoint(sm) {
+    height: 30px;
+  }
 
   &.c-logo-circles {
 

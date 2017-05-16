@@ -32,6 +32,17 @@ body.pale {
   background-color: $pale;
 }
 
+/* Bootstrap container override */
+.container {
+  margin-left: initial;
+  margin-right: initial;
+
+  @include breakpoint(sm) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .o-container {
   margin: auto;
   margin-top: $base-whitespace;
