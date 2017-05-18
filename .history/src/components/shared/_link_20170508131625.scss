@@ -1,0 +1,18 @@
+a, .o-link {
+  color: $bondi-blue;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: all $transitionspeed;
+
+  &:focus,
+  &:hover {
+    color: $dark-gray;
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $bondi-blue;
+    text-decoration: underline;
+  }
+}
