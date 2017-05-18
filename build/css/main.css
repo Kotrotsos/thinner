@@ -273,6 +273,9 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 125, ../../src/styleguide/elements/_form.scss */
 .control--radio input:disabled ~ .control-indicator:after { background: #D2D9DA; }
 
+/* line 2, ../../src/styleguide/elements/_loading.scss */
+.o-loading { position: relative; top: 7px; width: 26px; }
+
 /* line 2, ../../src/styleguide/elements/_icons.scss */
 [class^="o-icon-"] { padding: 0.5rem; }
 
@@ -308,7 +311,7 @@ label { display: inline-block; margin-bottom: 1rem; }
 /* line 2, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
 .c-ideal-price-box { display: flex; border: solid #D2D9DA 1px; padding: 2rem; border-radius: 6px; align-items: center; justify-content: center; }
 /* line 9, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
-.c-ideal-price-box-logo { flex: 1; padding-right: 1rem; }
+.c-ideal-price-box-logo { width: 50px; padding-right: 1rem; }
 @media (min-width: 768px) { /* line 9, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
   .c-ideal-price-box-logo { padding-right: initial; } }
 /* line 16, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     &-logo {
-      flex: 1;
+      width: 50px;
       padding-right:$base-whitespace;
       @include breakpoint(sm) {
         padding-right: initial;
