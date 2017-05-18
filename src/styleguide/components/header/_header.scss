@@ -13,6 +13,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    overflow: hidden;
     img {
       height: 800px;
       max-width: initial;
@@ -33,6 +34,9 @@
     @include breakpoint(sm) {
       position: absolute;
       top: 0;
+      margin-left: initial;
+      margin-right: initial;
+      z-index: $zindex-back;
       img {
         height: 800px;
         width: initial;
@@ -42,7 +46,7 @@
 
   .c-header-contentarea {
     position: relative;
-    &.c-header-contentarea-top {
+    &.c-header-contentarea {
       background-color: $white;
       padding: $base-whitespace * 4 $base-whitespace $base-whitespace;
       margin-left: -10px;
