@@ -14,3 +14,10 @@
 .o-icon-bell {
   @include svg-icon(icon-bell, left);
 }
+.o-icon-next {
+  @include svg-icon(icon-next, left);
+}
+
+.o-icon-next-right {
+  @include svg-icon(icon-next, right);
+}

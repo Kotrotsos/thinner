@@ -3,22 +3,63 @@
 .c-header {
   position: relative;
   width: 100%;
-  height: 600px;
+
+  &.c-header-large {
+    height: 600px;
+  }
+
 
   .c-header-image {
     position: absolute;
     right: 0;
     top: 0;
     img {
+      height: 800px;
       max-width: initial;
+      min-width: 500px;
+      position: relative;
+      z-index: $zindex-back;
+      width: initial;
     }
   }
+  .c-header-image-drop-below {
+    position: relative;
+    margin-left: -$containerpadding;
+    margin-right: -$containerpadding;
+    img {
+      height: initial;
+      width: 100%;
+    }
+    @include breakpoint(sm) {
+      position: absolute;
+      top: 0;
+      img {
+        height: 800px;
+        width: initial;
+      }
+    }
+  }
+
   .c-header-contentarea {
     position: relative;
-    top: 100px;
+    &.c-header-contentarea-top {
+      background-color: $white;
+      padding: $base-whitespace * 4 $base-whitespace $base-whitespace;
+      margin-left: -10px;
+      margin-right: -10px;
+      @include breakpoint(sm) {
+        background-color: transparent;
+        width: 55%;
+        top: 150px;
+        margin-left: initial;
+        margin-right: initial;
+        padding-top: 10px;
+      }
 
-    @include breakpoint(sm) {
-      width: 50%;
+    }
+    &.c-header-contentarea-background {
+      background-color: $white;
+      border-radius: 5px;
     }
   }
 

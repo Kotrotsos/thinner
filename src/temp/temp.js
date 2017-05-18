@@ -11,9 +11,3 @@ window.isMobile = function() {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
 };
-
-(function(window) {
-  if(isMobile()) {
-      confirm('Open deze pagina in "Moneyou"?');
-  }
-})(window);

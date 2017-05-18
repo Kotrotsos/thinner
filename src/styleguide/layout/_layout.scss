@@ -29,14 +29,18 @@ body {
 }
 
 body.pale {
-  background-color: $pale;
+  background-color: $tempgray;
 }
+
+
 
 /* Bootstrap container override */
 .container {
   margin-left: initial;
   margin-right: initial;
-
+  padding-left: $containerpadding;
+  padding-right: $containerpadding;
+  
   @include breakpoint(sm) {
     margin-left: auto;
     margin-right: auto;
