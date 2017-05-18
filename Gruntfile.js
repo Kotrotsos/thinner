@@ -106,7 +106,11 @@ module.exports = function(grunt) {
             js: {
               files: [
                 {
-                  src: ['src/js/*.js'],
+                  src: [
+                    'src/styleguide/components/**/*.class.js',
+                    'src/styleguide/components/**/*.component.js',
+                    'src/js/*.js'
+                  ],
                   dest: 'src/temp/temp.js'
                 }, {
                   src: ['src/js/vendor/**/*.*'],

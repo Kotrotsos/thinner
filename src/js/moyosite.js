@@ -8,9 +8,6 @@ window.isMobile = function() {
     return check;
 };
 
-// register
-
-
 new Vue({
       el: '#moyo',
       data: { },
