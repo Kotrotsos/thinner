@@ -21,8 +21,6 @@
 
 <body class="pale">
   <div id="moneyou">
-
-
     <div class="c-navigation c-navigation-isolated">
       <img title="moneyou logo" class="o-logo" src="build/images/logo-moneyou-rondjes.svg">
     </div>
@@ -57,8 +55,25 @@
               <p class="u-margin-bottom-3">Kom je er niet uit? <a href="#">Lees onze tips</a></p>
 
               <div class="u-margin-bottom-2">
+                <button class="o-cta-button o-cta-button-secondary" id="show-modal" @click="showModal = true">Annuleer</button>
+                  <!-- use the modal component, pass in the prop -->
+                  <modal v-if="showModal" @close="showModal = false" class="u-align-center">
 
-                <button class="o-cta-button o-cta-button-secondary">Annuleer</button>
+                    <div slot="header" class="modal-header">
+                        <img class="o-image u-margin-bottom-2" src="build/images/ill-success.svg" title="betaling-afbreken">
+                        <h3>Betaling afbreken?</h3>
+                    </div>
+
+                    <div slot="body">
+                      <p>
+                        Weet je zeker dat je de betaling wilt afbreken? Als je 'ja' kiest, dan gaan je gegevens verloren en ga je terug naar de
+                        webwinkel.
+                      </p>
+
+                    </div>
+
+
+                  </modal>
               </div>
             </div>
           </div>
@@ -75,6 +90,42 @@
       </div>
     </div>
   </div>
+  <!-- template for the modal component -->
+  <script type="text/x-template" id="modal-template">
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="modal-close"><button class="o-button o-button-transparent" @click="$emit('close')">
+              &times;
+            </button></div>
+            <div class="modal-header">
+              <slot name="header">
+
+              </slot>
+            </div>
+
+            <div class="modal-body">
+              <slot name="body">
+
+              </slot>
+            </div>
+
+            <div class="modal-footer">
+              <slot name="footer">
+                <button class="o-button o-button-secondary" @click="$emit('close')">
+                  Nee
+                </button>
+                <button class="o-button o-button-secondary" @click="cancel">
+                  Ja
+                </button>
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
   <script src="build/js/main.js"></script>
 

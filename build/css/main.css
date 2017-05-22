@@ -50,7 +50,7 @@ h1 { font-size: 3.8rem; color: #D40D47; line-height: 4.8rem; }
 @media (min-width: 768px) { /* line 11, ../../src/styleguide/identity/_typography.scss */
   h1 { font-size: 4.5rem; line-height: 5.5rem; } }
 @media (min-width: 992px) { /* line 11, ../../src/styleguide/identity/_typography.scss */
-  h1 { font-size: 5rem; line-height: 60rem; } }
+  h1 { font-size: 5rem; line-height: 6rem; } }
 
 /* line 27, ../../src/styleguide/identity/_typography.scss */
 h2 { font-size: 2.3rem; color: #89143A; line-height: 3rem; }
@@ -172,25 +172,37 @@ body.pale { background-color: #F3F6F6; }
 
 /* Elements */
 /* line 4, ../../src/styleguide/elements/_button.scss */
-.o-cta-button { width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
+.o-button, button, [type="submit"] { width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
 @media (min-width: 768px) { /* line 4, ../../src/styleguide/elements/_button.scss */
-  .o-cta-button { display: inline-block; width: initial; margin-bottom: initial; } }
-/* line 30, ../../src/styleguide/elements/_button.scss */
-.o-cta-button:focus, .o-cta-button:hover { background-color: #1C95B6; color: #FFFFFF; outline: 0; }
-/* line 37, ../../src/styleguide/elements/_button.scss */
-.o-cta-button.o-cta-button-secondary { background-color: #FFFFFF; border-color: #2AABCE; color: #2AABCE; }
-/* line 42, ../../src/styleguide/elements/_button.scss */
-.o-cta-button.o-cta-button-secondary:focus, .o-cta-button.o-cta-button-secondary:hover { background-color: #F3F6F6; border-color: #2AABCE; color: #2AABCE; outline: 0; }
-/* line 51, ../../src/styleguide/elements/_button.scss */
-.o-cta-button.o-cta-button-link { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; }
-/* line 58, ../../src/styleguide/elements/_button.scss */
-.o-cta-button.o-cta-button-link:after { display: inline-block; margin-left: 10px; content: ""; text-decoration: underline; background: url("svg/sprite.css-7a34b6b4.svg") 86.66667% 68.50508% no-repeat; position: relative; top: 1px; width: 15px; height: 15px; }
-/* line 70, ../../src/styleguide/elements/_button.scss */
-.o-cta-button.o-cta-button-link:focus, .o-cta-button.o-cta-button-link:hover { background-color: transparent; border-color: 0; color: #2D353A; outline: 0; text-decoration: none; }
-/* line 80, ../../src/styleguide/elements/_button.scss */
-.o-cta-button[disabled], .o-cta-button.disabled { background-color: #F3F6F6; border: transparent; color: #D2D9DA; cursor: default; }
-/* line 85, ../../src/styleguide/elements/_button.scss */
-.o-cta-button[disabled]:focus, .o-cta-button[disabled]:hover, .o-cta-button.disabled:focus, .o-cta-button.disabled:hover { color: #D2D9DA; }
+  .o-button, button, [type="submit"] { display: inline-block; width: initial; margin-bottom: initial; } }
+/* line 32, ../../src/styleguide/elements/_button.scss */
+.o-button:focus, .o-button:hover, button:focus, button:hover, [type="submit"]:focus, [type="submit"]:hover { background-color: #1C95B6; color: #FFFFFF; outline: 0; }
+/* line 39, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-secondary, button.o-button-secondary, [type="submit"].o-button-secondary { background-color: #FFFFFF; border-color: #2AABCE; color: #2AABCE; }
+/* line 44, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-secondary:focus, .o-button.o-button-secondary:hover, button.o-button-secondary:focus, button.o-button-secondary:hover, [type="submit"].o-button-secondary:focus, [type="submit"].o-button-secondary:hover { background-color: #F3F6F6; border-color: #2AABCE; color: #2AABCE; outline: 0; }
+/* line 53, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-icon, button.o-button-icon, [type="submit"].o-button-icon { background-color: transparent; }
+/* line 57, ../../src/styleguide/elements/_button.scss */
+.control-element + .o-button.o-button-icon, .control-element + button.o-button-icon, .control-element + [type="submit"].o-button-icon { position: absolute; right: 0; top: 0; height: 50px; width: 20px; padding: 0; margin: 0; }
+/* line 65, ../../src/styleguide/elements/_button.scss */
+.control-element + .o-button.o-button-icon:hover, .control-element + button.o-button-icon:hover, .control-element + [type="submit"].o-button-icon:hover { right: -1px; }
+/* line 69, ../../src/styleguide/elements/_button.scss */
+.control-element + .o-button.o-button-icon:active, .control-element + button.o-button-icon:active, .control-element + [type="submit"].o-button-icon:active { right: -1px; }
+/* line 74, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-transparent, button.o-button-transparent, [type="submit"].o-button-transparent { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; padding-left: 0; width: 50px; }
+/* line 84, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-link, button.o-button-link, [type="submit"].o-button-link { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; padding-left: 0; }
+/* line 92, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-link:after, button.o-button-link:after, [type="submit"].o-button-link:after { display: inline-block; margin-left: 10px; content: ""; text-decoration: underline; background: url("../images/icon-arrow-right.svg") no-repeat; position: relative; top: 2px; width: 15px; height: 16px; }
+/* line 104, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-link:focus, .o-button.o-button-link:hover, button.o-button-link:focus, button.o-button-link:hover, [type="submit"].o-button-link:focus, [type="submit"].o-button-link:hover { background-color: transparent; border-color: 0; color: #2D353A; outline: 0; text-decoration: none; }
+/* line 114, ../../src/styleguide/elements/_button.scss */
+.o-button.o-button-small, button.o-button-small, [type="submit"].o-button-small { height: 50px; padding: 1rem 2rem; line-height: 0; font-weight: normal; font-size: 1.6rem; }
+/* line 121, ../../src/styleguide/elements/_button.scss */
+.o-button[disabled], .o-button.disabled, button[disabled], button.disabled, [type="submit"][disabled], [type="submit"].disabled { background-color: #F3F6F6; border: transparent; color: #D2D9DA; cursor: default; }
+/* line 126, ../../src/styleguide/elements/_button.scss */
+.o-button[disabled]:focus, .o-button[disabled]:hover, .o-button.disabled:focus, .o-button.disabled:hover, button[disabled]:focus, button[disabled]:hover, button.disabled:focus, button.disabled:hover, [type="submit"][disabled]:focus, [type="submit"][disabled]:hover, [type="submit"].disabled:focus, [type="submit"].disabled:hover { color: #D2D9DA; }
 
 /* line 6, ../../src/styleguide/elements/_image.scss */
 .o-image-x2 { width: 20rem; }
@@ -320,6 +332,38 @@ label { display: inline-block; margin-bottom: 1rem; }
 .c-ideal-price-box-up { font-size: 1.3rem; position: relative; top: -1rem; }
 /* line 26, ../../src/styleguide/components/ideal-price-box/_ideal-price-box.scss */
 .c-ideal-price-box-price { flex: 2; font-size: 3rem; text-align: right; }
+
+/* line 1, ../../src/styleguide/components/modal/_modal.scss */
+.modal-mask { position: fixed; z-index: 9998; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(45, 53, 58, 0.44); display: table; transition: opacity .3s ease; }
+
+/* line 13, ../../src/styleguide/components/modal/_modal.scss */
+.modal-wrapper { display: table-cell; vertical-align: middle; }
+
+/* line 18, ../../src/styleguide/components/modal/_modal.scss */
+.modal-container { position: relative; width: 70%; max-width: 600px; margin: 0px auto; padding: 20px 30px; background-color: #FFFFFF; border-radius: 5px; box-shadow: 0 2px 6px 0 rgba(63, 63, 63, 0.08); transition: all .3s ease; }
+
+/* line 30, ../../src/styleguide/components/modal/_modal.scss */
+.modal-close .o-button-transparent { color: #2D353A; position: absolute; right: 1rem; top: -2rem; padding: 0; margin: 0; font-size: 5rem; width: 30px; }
+/* line 39, ../../src/styleguide/components/modal/_modal.scss */
+.modal-close .o-button-transparent:hover { color: #2AABCE; }
+
+/* line 44, ../../src/styleguide/components/modal/_modal.scss */
+.modal-body { margin: 20px 0; }
+
+@media (min-width: 768px) { /* line 53, ../../src/styleguide/components/modal/_modal.scss */
+  .modal-footer .o-button { width: 150px; } }
+
+/* line 59, ../../src/styleguide/components/modal/_modal.scss */
+.modal-default-button { float: right; }
+
+/* line 63, ../../src/styleguide/components/modal/_modal.scss */
+.modal-enter { opacity: 0; }
+
+/* line 67, ../../src/styleguide/components/modal/_modal.scss */
+.modal-leave-active { opacity: 0; }
+
+/* line 71, ../../src/styleguide/components/modal/_modal.scss */
+.modal-enter .modal-container, .modal-leave-active .modal-container { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 /* Tail */
 /* Margin & padding helpers */
