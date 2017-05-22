@@ -9,6 +9,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svg-sprite');
     grunt.loadNpmTasks('grunt-sass-lint');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks("grunt-rollup");
 
 
     var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
@@ -16,6 +17,23 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
+
+      "rollup": {
+        "options": {
+          "format": "iife",
+          "plugins": [
+            require("rollup-plugin-babel")({
+              "presets": [["es2015", { "modules": false }]],
+              "plugins": ["external-helpers"]
+            })
+          ]
+        },
+        "dist": {
+          "files": {
+            "./temp/temp2.js": ["./temp/temp.js"]
+          }
+        }
+      },
         /*
          * SASSLINT:
          * Checks the Sass files for style and coding errors
