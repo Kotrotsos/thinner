@@ -17,6 +17,9 @@
     text-align:center;
     padding-top: $base-whitespace * 2;
     height: 6rem;
+    background-color: $transparent;
+    display: inherit;
+    box-shadow: none;
   }
 
   &_logo {

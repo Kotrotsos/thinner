@@ -834,7 +834,7 @@ a:visited, .o-link:visited { color: #2AABCE; text-decoration: underline; }
 .o-loading { position: relative; top: 7px; width: 26px; }
 
 /* line 2, ../../src/styleguide/elements/_logo.scss */
-.o-logo { height: 60px; min-width: 120px; }
+.o-logo { height: 30px; min-width: 120px; }
 @media (min-width: 768px) { /* line 2, ../../src/styleguide/elements/_logo.scss */
   .o-logo { height: 30px; } }
 
@@ -957,18 +957,18 @@ label { display: inline-block; margin-bottom: 1rem; }
 @media (min-width: 768px) { /* line 2, ../../src/styleguide/components/navigation/navigation.scss */
   .c-navigation { height: 60px; } }
 /* line 16, ../../src/styleguide/components/navigation/navigation.scss */
-.c-navigation.c-navigation-isolated { text-align: center; padding-top: 2rem; height: 6rem; }
-/* line 22, ../../src/styleguide/components/navigation/navigation.scss */
+.c-navigation.c-navigation-isolated { text-align: center; padding-top: 2rem; height: 6rem; background-color: transparent; display: inherit; box-shadow: none; }
+/* line 25, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation_logo { flex: 1; }
-/* line 28, ../../src/styleguide/components/navigation/navigation.scss */
+/* line 31, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation_menu { flex: 1; }
-/* line 35, ../../src/styleguide/components/navigation/navigation.scss */
+/* line 38, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation_menu .o-list-item { margin-right: 2rem; }
-/* line 39, ../../src/styleguide/components/navigation/navigation.scss */
+/* line 42, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation_care { flex: 1; line-height: 1; }
-@media (min-width: 768px) { /* line 39, ../../src/styleguide/components/navigation/navigation.scss */
+@media (min-width: 768px) { /* line 42, ../../src/styleguide/components/navigation/navigation.scss */
   .c-navigation_care { float: right; width: 20rem; } }
-/* line 46, ../../src/styleguide/components/navigation/navigation.scss */
+/* line 49, ../../src/styleguide/components/navigation/navigation.scss */
 .c-navigation_care .c-navigation-care_customer-care { width: 150px; }
 
 /* line 3, ../../src/styleguide/components/header/_header.scss */
