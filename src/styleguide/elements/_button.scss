@@ -4,12 +4,14 @@
 .o-button,
 button,
 [type="submit"] {
+  display: inline-block;
   width: 100%;
   background-color: $bondi-blue;
   color: $white;
   margin-bottom: $base-whitespace;
   font-weight: 600;
   font-size: 1.8rem;
+  text-decoration: none;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;

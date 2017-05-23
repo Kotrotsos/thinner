@@ -168,40 +168,40 @@ body.pale { background-color: #F3F6F6; }
 /* line 29, ../../src/styleguide/layout/_section.scss */
 .o-section.o-section-constrict { padding-left: 0; padding-right: 0; }
 @media (min-width: 768px) { /* line 29, ../../src/styleguide/layout/_section.scss */
-  .o-section.o-section-constrict { padding-left: 100px; padding-right: 100px; } }
+  .o-section.o-section-constrict { padding-left: 200px; padding-right: 200px; } }
 
 /* Elements */
 /* line 4, ../../src/styleguide/elements/_button.scss */
-.o-button, button, [type="submit"] { width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
+.o-button, button, [type="submit"] { display: inline-block; width: 100%; background-color: #2AABCE; color: #FFFFFF; margin-bottom: 1rem; font-weight: 600; font-size: 1.8rem; text-decoration: none; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; height: 6rem; padding: 1rem 3rem; line-height: 2.1; border-radius: 3rem; transition: all 100ms; }
 @media (min-width: 768px) { /* line 4, ../../src/styleguide/elements/_button.scss */
   .o-button, button, [type="submit"] { display: inline-block; width: initial; margin-bottom: initial; } }
-/* line 32, ../../src/styleguide/elements/_button.scss */
+/* line 34, ../../src/styleguide/elements/_button.scss */
 .o-button:focus, .o-button:hover, button:focus, button:hover, [type="submit"]:focus, [type="submit"]:hover { background-color: #1C95B6; color: #FFFFFF; outline: 0; }
-/* line 39, ../../src/styleguide/elements/_button.scss */
+/* line 41, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-secondary, button.o-button-secondary, [type="submit"].o-button-secondary { background-color: #FFFFFF; border-color: #2AABCE; color: #2AABCE; }
-/* line 44, ../../src/styleguide/elements/_button.scss */
+/* line 46, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-secondary:focus, .o-button.o-button-secondary:hover, button.o-button-secondary:focus, button.o-button-secondary:hover, [type="submit"].o-button-secondary:focus, [type="submit"].o-button-secondary:hover { background-color: #F3F6F6; border-color: #2AABCE; color: #2AABCE; outline: 0; }
-/* line 53, ../../src/styleguide/elements/_button.scss */
+/* line 55, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-icon, button.o-button-icon, [type="submit"].o-button-icon { background-color: transparent; }
-/* line 57, ../../src/styleguide/elements/_button.scss */
+/* line 59, ../../src/styleguide/elements/_button.scss */
 .control-element + .o-button.o-button-icon, .control-element + button.o-button-icon, .control-element + [type="submit"].o-button-icon { position: absolute; right: 0; top: 0; height: 50px; width: 20px; padding: 0; margin: 0; }
-/* line 65, ../../src/styleguide/elements/_button.scss */
+/* line 67, ../../src/styleguide/elements/_button.scss */
 .control-element + .o-button.o-button-icon:hover, .control-element + button.o-button-icon:hover, .control-element + [type="submit"].o-button-icon:hover { right: -1px; }
-/* line 69, ../../src/styleguide/elements/_button.scss */
+/* line 71, ../../src/styleguide/elements/_button.scss */
 .control-element + .o-button.o-button-icon:active, .control-element + button.o-button-icon:active, .control-element + [type="submit"].o-button-icon:active { right: -1px; }
-/* line 74, ../../src/styleguide/elements/_button.scss */
+/* line 76, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-transparent, button.o-button-transparent, [type="submit"].o-button-transparent { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; padding-left: 0; width: 50px; }
-/* line 84, ../../src/styleguide/elements/_button.scss */
+/* line 86, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-link, button.o-button-link, [type="submit"].o-button-link { background-color: transparent; border-color: transparent; color: #2AABCE; font-weight: 500; text-decoration: none; padding-left: 0; }
-/* line 92, ../../src/styleguide/elements/_button.scss */
+/* line 94, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-link:after, button.o-button-link:after, [type="submit"].o-button-link:after { display: inline-block; margin-left: 10px; content: ""; text-decoration: underline; background: url("../images/icon-arrow-right.svg") no-repeat; position: relative; top: 2px; width: 15px; height: 16px; }
-/* line 104, ../../src/styleguide/elements/_button.scss */
+/* line 106, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-link:focus, .o-button.o-button-link:hover, button.o-button-link:focus, button.o-button-link:hover, [type="submit"].o-button-link:focus, [type="submit"].o-button-link:hover { background-color: transparent; border-color: 0; color: #2D353A; outline: 0; text-decoration: none; }
-/* line 114, ../../src/styleguide/elements/_button.scss */
+/* line 116, ../../src/styleguide/elements/_button.scss */
 .o-button.o-button-small, button.o-button-small, [type="submit"].o-button-small { height: 50px; padding: 1rem 2rem; line-height: 0; font-weight: normal; font-size: 1.6rem; }
-/* line 121, ../../src/styleguide/elements/_button.scss */
+/* line 123, ../../src/styleguide/elements/_button.scss */
 .o-button[disabled], .o-button.disabled, button[disabled], button.disabled, [type="submit"][disabled], [type="submit"].disabled { background-color: #F3F6F6; border: transparent; color: #D2D9DA; cursor: default; }
-/* line 126, ../../src/styleguide/elements/_button.scss */
+/* line 128, ../../src/styleguide/elements/_button.scss */
 .o-button[disabled]:focus, .o-button[disabled]:hover, .o-button.disabled:focus, .o-button.disabled:hover, button[disabled]:focus, button[disabled]:hover, button.disabled:focus, button.disabled:hover, [type="submit"][disabled]:focus, [type="submit"][disabled]:hover, [type="submit"].disabled:focus, [type="submit"].disabled:hover { color: #D2D9DA; }
 
 /* line 6, ../../src/styleguide/elements/_image.scss */

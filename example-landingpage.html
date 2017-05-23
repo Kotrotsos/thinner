@@ -49,32 +49,64 @@
             </div>
 
             <div class="o-section align-center-on-sm">
-              <h3>Betalen met je Moneyou app</h3>
-              <p class="u-margin-bottom-2">Open de Moneyou app op je smartphone, select de scanner en scan de QR code</p>
+              <div class="on-desktop-device">
+                <h3>Betalen met je Moneyou app</h3>
+                <p class="u-margin-bottom-2">Open de Moneyou app op je smartphone of tablet en kies de QR scanner. Scan de QR code om te betalen.</p>
 
-              <p class="u-margin-bottom-3">Kom je er niet uit? <a href="#">Lees onze tips</a></p>
+                <p class="u-margin-bottom-3">Hulp nodig? <a href="#">kijk bij onze tips</a></p>
 
-              <div class="u-margin-bottom-2">
-                <button class="o-cta-button o-cta-button-secondary" id="show-modal" @click="showModal = true">Annuleer</button>
-                  <!-- use the modal component, pass in the prop -->
-                  <modal v-if="showModal" @close="showModal = false" class="u-align-center">
+                <div class="u-margin-bottom-2">
+                  <button class="o-button o-button-secondary" id="show-modal" @click="showModal = true">Annuleer</button>
+                    <!-- use the modal component, pass in the prop -->
+                    <modal v-if="showModal" @close="showModal = false" class="u-align-center">
 
-                    <div slot="header" class="modal-header">
-                        <img class="o-image u-margin-bottom-2" src="build/images/ill-success.svg" title="betaling-afbreken">
-                        <h3>Betaling afbreken?</h3>
-                    </div>
+                      <div slot="header" class="modal-header">
+                          <img class="o-image u-margin-bottom-2" src="build/images/ill-success.svg" title="betaling-afbreken">
+                          <h3>Betaling afbreken?</h3>
+                      </div>
 
-                    <div slot="body">
-                      <p>
-                        Weet je zeker dat je de betaling wilt afbreken? Als je 'ja' kiest, dan gaan je gegevens verloren en ga je terug naar de
-                        webwinkel.
-                      </p>
+                      <div slot="body">
+                        <p>
+                          Weet je zeker dat je de betaling wilt afbreken? Dan ga je terug naar de webwinkel.
+                        </p>
 
-                    </div>
+                      </div>
 
 
-                  </modal>
+                    </modal>
+                </div>
               </div>
+              <div class="on-mobile-device">
+                <h3>Betalen met iDeal</h3>
+                <p class="u-margin-bottom-2"> Open de Moneyou app op je smartphone, select de scanner en scan de QR code.</p>
+
+                <p class="u-margin-bottom-3">Kom je er niet uit? <a href="#">Lees onze tips</a></p>
+
+                <div class="u-margin-bottom-3">
+                  <a class="o-button">Open de app</a>
+                  <button class="o-button o-button-secondary" id="show-modal" @click="showModal = true">Annuleer</button>
+                    <!-- use the modal component, pass in the prop -->
+                    <modal v-if="showModal" @close="showModal = false" class="u-align-center">
+
+                      <div slot="header" class="modal-header">
+                          <img class="o-image u-margin-bottom-2" src="build/images/ill-success.svg" title="betaling-afbreken">
+                          <h3>Betaling afbreken?</h3>
+                      </div>
+
+                      <div slot="body">
+                        <p>
+                          Weet je zeker dat je de betaling wilt afbreken? Als je 'ja' kiest, dan gaan je gegevens verloren en ga je terug naar de
+                          webwinkel.
+                        </p>
+
+                      </div>
+
+
+                    </modal>
+                </div>
+                <p class="u-margin-bottom-3">Kom je er niet uit? <a href="#">Lees onze tips</a></p>
+              </div>
+
             </div>
           </div>
           <div class="column u-hide-on-sm">
@@ -86,7 +118,7 @@
         </div>
       </div>
       <div class="o-container o-section u-align-center on-mobile-device">
-        <p>Met de Moneyou app betalen? <br><a href="#" class="o-link">Open de app</a></p>
+        <p>Heb je de Moneyou app nog niet? <br><a href="#" class="o-link">Download de app</a></p>
       </div>
     </div>
   </div>
@@ -113,10 +145,10 @@
 
             <div class="modal-footer">
               <slot name="footer">
-                <button class="o-button o-button-secondary" @click="$emit('close')">
+                <button class="o-button o-button-secondary u-margin-1" @click="$emit('close')">
                   Nee
                 </button>
-                <button class="o-button o-button-secondary" @click="cancel">
+                <button class="o-button o-button-secondary u-margin-1" @click="cancel">
                   Ja
                 </button>
               </slot>
