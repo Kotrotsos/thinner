@@ -19,23 +19,26 @@
         <img title="moneyou logo" class="o-logo" src="build/images/logo-moneyou-rondjes.svg">
     </div>
 
-    <div class="o-container">
-        <div class="o-section o-section-background o-section-framed">
+    <div id="moneyou" class="o-container">
+        <div class="o-section o-section-background o-section-framed o-section-narrow">
             <div class="row">
+              <div class="column">
 
-                <div class="column column-expand u-align-center o-section o-section-constrict">
-                    <div class="u-section-padded">
-                    <img class="o-image-x2" src="build/images/ill-failed.svg" title="timeout occured">
-                    </div>
+              </div>
+              <div class="column grow-12">
+                <div class="column column-expand u-align-center">
 
-                    <h3>Betaling is afgebroken</h3>
+                    <img class="u-margin-bottom-3" src="build/images/ill-failed.svg" title="timeout occured">
 
-                    <p class="u-padding-bottom-2">
+
+                    <h3 class="or-ideal-h3">Betaling is afgebroken</h3>
+
+                    <p class="u-margin-bottom-3">
                         De betaling is verlopen. Ga terug naar de webwinkel en probeer het nog eens.
                     </p>
-                    <div class="c-ideal-price-box u-margin-bottom-2 u-align-left">
+                    <div class="c-ideal-price-box u-margin-bottom-3 u-align-left">
                         <div class="c-ideal-price-box-logo">
-                            <img title="ideal logo" src="build/images/iDeal.svg">
+                            <img class="or-ideal-logo" title="ideal logo" src="build/images/iDealLogo.png">
                         </div>
                         <div class="c-ideal-price-box-description">
                             bol.com b.v. inzake bol.com iDEAL Payment
@@ -45,8 +48,12 @@
                         </div>
                     </div>
                     <div class="u-padding-bottom-2">
-                      <button class="o-cta-button">Terug naar webwinkel</button>
+                      <button class="o-button o-button-secondary">Terug naar webwinkel</button>
                     </div>
+                </div>
+              </div>
+                <div class="column">
+
                 </div>
               </div>
             </div>
@@ -57,7 +64,8 @@
           </p>
         </div>
     </div>
-    <script src="build/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
+    <script src="build/js/main.js"></script>
 </body>
 
 </html>

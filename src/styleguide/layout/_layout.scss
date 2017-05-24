@@ -34,7 +34,7 @@ body.pale {
 
 .o-container {
   margin: auto;
-  margin-top: $base-whitespace;
+  //margin-top: $base-whitespace;
   width: 100%;
 
   @include breakpoint(lg) {

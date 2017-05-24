@@ -7,14 +7,14 @@
     align-items: center;
     justify-content: center;
     &-logo {
-      width: 50px;
+      width: 60px;
       padding-right:$base-whitespace;
       @include breakpoint(sm) {
         padding-right: initial;
       }
     }
     &-description {
-      flex: 2;
+      flex: 3;
       font-size: 1.3rem;
       margin-right: $base-whitespace;
     }

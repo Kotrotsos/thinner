@@ -69,6 +69,10 @@ var app = new Vue({
             console.log('success');
             location = idealSettings.path.success;
             break;
+          case "timeout":
+            console.log('timeout');
+            location = idealSettings.path.timeout;
+            break;
           case "error":
             console.log('error');
             location = idealSettings.path.error;
@@ -86,7 +90,6 @@ var app = new Vue({
       document.body.className += ' ' + 'is_mobile';
       var dialog = confirm('Open deze pagina in "Moneyou"?');
       if (dialog === true) {
-        console.log('true')
         location = idealSettings.appLocation;
       }
     } else {

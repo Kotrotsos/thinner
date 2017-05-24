@@ -9,13 +9,29 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svg-sprite');
     grunt.loadNpmTasks('grunt-sass-lint');
     grunt.loadNpmTasks('grunt-contrib-clean');
-
+    grunt.loadNpmTasks('grunt-postcss');
 
     var tasks = ['svg_sprite', 'sass', 'concat', 'babel'];
-    var dev = ['clean', 'sasslint', 'sass', 'concat', 'babel', 'copy', 'connect', 'watch'];
+    var dev = ['clean', 'sasslint', 'sass', 'postcss', 'concat', 'babel', 'copy', 'connect', 'watch'];
 
     grunt.initConfig({
+      postcss: {
+               options: {
+                 map: true, // inline sourcemaps
 
+
+
+                 processors: [
+                   require('postcss-inline-svg')(), // inline SVG
+                   require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+
+                 ]
+               },
+               dist: {
+                 src: 'temp/css/main.css',
+                 dest: 'build/css/main.css'
+               }
+             },
         /*
          * SASSLINT:
          * Checks the Sass files for style and coding errors
@@ -56,7 +72,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'build/css/main.css': 'src/styleguide/base.scss'
+                    'temp/css/main.css': 'src/styleguide/base.scss'
                 }
             }
         },

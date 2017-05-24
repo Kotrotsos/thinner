@@ -33,3 +33,6 @@
 
 /* Tail */
 @import 'shared/utilities';
+
+/* Overriden, very specific selectors not to be used elsewhere */
+@import 'ideal';

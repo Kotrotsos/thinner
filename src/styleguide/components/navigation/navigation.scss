@@ -4,8 +4,8 @@
   /* Navigation isolated is for pages like Ideal payments where there is only a logo */
   &.c-navigation-isolated {
     text-align:center;
-    padding-top: $base-whitespace * 2;
-    height: 6rem;
+    padding-top: $base-whitespace * 3;
+    padding-bottom: $base-whitespace * 3;
   }
 
   .c-navigation-logo {
